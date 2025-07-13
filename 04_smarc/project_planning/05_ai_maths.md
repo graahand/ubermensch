@@ -220,6 +220,66 @@ CTranslate2
 intel llm runtime
 
 
+## Feasibility Report AI MATHS
+
+core features for the platform: image upload (different maths and science problems), 
+
+
+cost breakdown and analysis 
+
+hardware requirements 
+1. NVIDIA A100 80GB GPU, CPU, RAM and Storage. 
+
+operational cost: 
+1. electricity consumption for server, internet and maintenance. 
+
+user concurrency and handling. 
+
+A single A100 GPU can handle approximately x concurrent requests every 5 minutes.
+
+
+a 10b parameters multi-modal llm based on qwen quantized in 8-bit integer representation ( lossless performance).
+
+### gptq: 
+Group-wise Precision Tuning Quantization means it performs one-shot weight quantization usign **approximate second-order optimization**{First-order optimization methods (like gradient descent or Adam) use only the gradient (first derivative) of the loss function to update model parameters but second order optimization methods uses both gradient and curvature(second derivative)} approach based on hessian matrix, which allow optimal quantized weights to minimize quantization error.
+its a sota method for post-training quantization.  
+
+
+considerations: 
+
+key considerations for concurrency, throughput, inference latency, tokens generated per second, and Multi-Instance GPU (MIG) usage on a single NVIDIA A100 80GB GPU
+
+concurrency: it is limited by GPU memory, compute resources(tensor cores and cuda cores) and model size (larger models more memory and compute), where MIG (Multi-Instance GPU) can greatly increase the concurrency. 
+
+throughput: quantified in operations or tokens processed per second.  it depends on precision of model's weights and model size. A100 delivers around 1200 TOPS(tera operations per seconds which means it can perform 1.2 trillion integer operations every second) for int8 inference. it is also depends on memory bandwidth(about 1.9 TB/s on the A100 80GB) and computer cores( cuda cores does what?  and tensor cores { are specialized hardware units designed to accelerate matrix multiplications and deep learning operations}).
+
+inference latency: it depends on model size, prompt length, batch size and precision (models' weights). 8-bit quantization can greatly speed up matrix multiplicaiton for better inference. 
+
+
+resources breakdown (specific)
+
+1. h100 gpu for llm inference, cost around $120,000
+2. cpu server with dual intel xeon gold 6338 (32 cores), cost around $24,000
+3. system ram required around 256GB DDR4 EEC RAM for data loading and buffering. 
+4. 8TB enterprise-grade NVMe SSD, storing models weights, user's data. 
+5. 100Gbps ethernet switch for high to connect gpu and cpu()
+6. UPS (Uninterruptible power supply) backup system for keeping the servers up. 
+7. cooling system for optimal GPU/server temperature might required liquid cooling and air conditioning. 
+8. power distribution unit for power management and monitoring for the server. 
+
+flow with above resources and models information. 
+
+When a user sends a message or request containing text and/or images, the CPU server—which is the central processing machine equipped with powerful processors (e.g., dual Intel Xeon Gold 6338)—first handles the orchestration and preprocessing tasks. Orchestration means managing and coordinating the flow of data and tasks between different system components, ensuring that each step happens in the right order and resources are efficiently used. Preprocessing involves preparing the raw input data so it can be understood by the model. For text, this includes tokenization, which breaks sentences into smaller units (tokens) that the language model can process. For images, preprocessing involves resizing, normalizing pixel values, and converting the images into a format suitable for the model. This preprocessed data is temporarily stored in the server’s RAM (Random Access Memory) to allow fast access during computation. Once ready, the images are sent over a high-speed Ethernet network (e.g., 100Gbps switch) to the H100 GPU. Here, the GPU performs image encoding, which means transforming the images into numerical representations called vector embeddings. These embeddings capture the essential visual features of the images in a form the language model can integrate with text data. Although image encoding requires heavy computation, it uses comparatively less GPU memory than the full language model inference.
+
+Next, the same H100 GPU runs the language model inference, which combines the image embeddings and the text tokens to generate the desired output—this could be textual answers, LaTeX formulas, or other text-based responses. The GPU’s Tensor Cores accelerate this process by efficiently performing matrix multiplications, especially when the model weights are quantized to 8-bit precision, which reduces latency and increases throughput without significant loss in accuracy. The model weights (the learned parameters of the multi-modal Qwen model) and user data are stored on a high-speed NVMe SSD. Regarding user chat history, it is typically saved either on this SSD or a connected database system, allowing the model to access past interactions if needed for context or personalization.To ensure system reliability, a UPS (Uninterruptible Power Supply) protects the servers from power outages, maintaining uptime. The hardware is kept cool by a combination of liquid cooling and air conditioning, preventing overheating that could degrade performance or damage components. A Power Distribution Unit (PDU) manages and monitors the power supply to all devices, ensuring stable and safe operation.
+
+Finally, once the GPU generates the output, it is sent back to the CPU server for any necessary post-processing (like formatting or applying business logic), and then delivered to the user, completing an efficient and scalable multi-modal inference pipeline.
+
+
+
+
+
+
 
 
 
