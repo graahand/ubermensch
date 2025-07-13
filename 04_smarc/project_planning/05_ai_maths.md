@@ -240,8 +240,9 @@ A single A100 GPU can handle approximately x concurrent requests every 5 minutes
 
 a 10b parameters multi-modal llm based on qwen quantized in 8-bit integer representation ( lossless performance).
 
-    gptq: Group-wise Precision Tuning Quantization means it performs one-shot weight quantization usign **approximate second-order optimization**{First-order optimization methods (like gradient descent or Adam) use only the gradient (first derivative) of the loss function to update model parameters but second order optimization methods uses both gradient and curvature(second derivative)} approach based on hessian matrix, which allow optimal quantized weights to minimize quantization error.
-    its a sota method for post-training quantization.  
+### gptq: 
+Group-wise Precision Tuning Quantization means it performs one-shot weight quantization usign **approximate second-order optimization**{First-order optimization methods (like gradient descent or Adam) use only the gradient (first derivative) of the loss function to update model parameters but second order optimization methods uses both gradient and curvature(second derivative)} approach based on hessian matrix, which allow optimal quantized weights to minimize quantization error.
+its a sota method for post-training quantization.  
 
 
 considerations: 
