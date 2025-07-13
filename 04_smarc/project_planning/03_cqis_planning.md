@@ -117,6 +117,12 @@ for now research on vlms is on hold.
 
 
 
+#############################################################
+
+## improvement
+
+college specific words that are correct but flagged as incorrect like pokhara university for apex college, BSc(hons) computing for islington college, and so on
+such words shouldn't be marked as incorrect. 
 
 
 

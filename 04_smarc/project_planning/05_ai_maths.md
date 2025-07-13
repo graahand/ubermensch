@@ -112,6 +112,9 @@ it can be done with this as well vLLM or Hugging Face Transformers with BitsAndB
 (lower perplexity means better performance) [its a exponentiation of average negative log-likelihood of predicted tokens.]
 
 
+### GPTQ
+
+running GPTQ models with GPTQModel(huggingface toolkit),
 
 
 ##### k-quantization / k-scheme
