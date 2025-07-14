@@ -334,3 +334,8 @@ ept of the analytical reports generated after a simple MCQ based test which don'
 
 
 
+**deduplication: process of identification and removal of duplicate copies of data ensuring the unique instance of each piece of data stored.**
+
+*A custom tokenizer can result in a smaller vocabulary, which speeds up model training and inference while capturing more relevant information*
+
+replit pass: Tra@nsformer#9006
