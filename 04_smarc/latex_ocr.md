@@ -1,4 +1,4 @@
-#aimath
+# aimath
 
 # latex ocr for ai math dataset development
 

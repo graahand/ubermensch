@@ -1,4 +1,6 @@
+[[latex_ocr]]
 
+# custom slideshow kavya
 a simple slideshow functionality either in form of flask web app or desktop application with tkinter or any other gui application. *must be visually appealing" 
 
 there should be custom text " Welcome Kavya Gen3" /br

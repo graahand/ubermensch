@@ -1,3 +1,5 @@
+[[computer-vision]]
+
 # DEEPFAKE DETECTION
 
 Deepfake is a technology dedicated to creating highly realistic facial images and videos under specific conditions, which has significant application potential in fields such as entertainment, movie production and digital human creation.  In addition to deepfake generation, corresponding deepfake detection technology continuously evolve to regulate the potential misuse of deepfakes, such as privacy invasion and phishing attacks.

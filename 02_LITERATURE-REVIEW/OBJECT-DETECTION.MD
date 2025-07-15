@@ -1,3 +1,5 @@
+[[computer-vision]]
+
 # Data augmentation using brightness and darkness to enhance the performance of yolo7 object detection algorithm 
 [Abdulghani M. Abdulghani]
 ## From Abstract

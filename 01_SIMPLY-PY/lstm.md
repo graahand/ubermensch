@@ -43,6 +43,7 @@ For the cases where we need more context, RNNs become unable to learn to connect
 ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/df89fc0b-ce89-458c-88fa-b18c8cdb3e6b/707ef6b6-50d3-43b0-8d2c-9aaa8c869aab/image.png)
 
 **Layers of LSTM networks**
+[[llms]]
 
 The key to LSTM  is the cell state, the horizontal line running the top of the diagram. The cell state is like a conveyor belt. It runs down the entire chain, with only some minor linear interactions. It’s very easy for information to just flow along it unchanged. 
 

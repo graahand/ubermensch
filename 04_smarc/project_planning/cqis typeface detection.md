@@ -1,4 +1,6 @@
 
+[[03_cqis_planning]]
+
 ### convolutional neural network for typeface classification
 
 data collection by generating the typeface/font text to image from font file like  .ttf or .otf which are easily available.
