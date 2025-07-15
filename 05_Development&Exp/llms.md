@@ -54,7 +54,54 @@ help cook our food, but they can also burn our homes and hurt us.
 21. Idiosyncrasies are unique or unusual habits, behaviors, or characteristics that are specific to a person, group, or thing.
 22. BoW(Bags of words) represents text as a collection of words focusing solely on word frequency without considering grammer, word order or context. It splits words by whitespace and doesn't handles prefixes and suffixes.  
 23. In N-Gram, it uses the previous N-1 words to predict the next word. For example, in a trigram model (N=3), it looks at the previous 2 words to predict the 3rd.This adds a bit of context to the model, helping it understand word order and common phrases.N-Gram models improve on BoW by considering sequences of words, giving the model some sense of context.
-24. 
+24. Bayesian models, like the Naïve Bayes classifier, assume feature independence to classify data efficiently, though they may lack the ability to model sequences or generate language naturally.
+25. Bayes’ theorem is a mathematical formula that calculates the probability of a hypothesis being true given new evidence by updating prior knowledge with the likelihood of that evidence
+26. Hidden markov models are stochastic(probabilistic) models that extends N-gram models by including hidden states (like part of speech tagging or Named entity recognition) which allow the capturing the dependencies based on these hidden states rather than just observable word sequences. HMM doesn't generates the  sequence of words rather help classifying or tagging the text serving as building blocks before modern transformer based llms. 
+HMMs are incredible fast and often used in predictive text or predictive search applications.
+
+    Imagine generating a sentence, and you want to predict the next word based not only on the previous word but also on the part-of-speech tag (hidden state) of the current word. For instance, if your current hidden state is "adjective," the model learns that the next word is likely a "noun." So, after the sequence "I am," if the model’s hidden state is "verb (am)," it will predict a high probability for "happy" (adjective) next, but after outputting "happy," it lowers the chance of "happy" appearing again immediately and instead expects words like "today" (noun).
+
+
+27. *"Hearkening" means listening closely or paying careful attention to something*
+28. *Quintessential means representing the most perfect or typical example of something.*
+
+29. Vector embeddigns is a way to represent the texts (words,sentences) as a list of numbers so that the  model/computer understands and compare the meaning, words with similar meanign have similar  vector(number) representation.
+
+30. Word2Vec: a method that learns vector embeddigns for words by analysing large text corpus so that words used in similar context have vector close to  each others,helping model understand word meanings better. 
+
+31. A type of neural network designed to process sequences—like sentences—by remembering previous words in the sequence to better predict the next one, but it can struggle with very long sentences (why?:due to the vanishing gradient problem, where the influence of earlier words fades exponentially during training, making it hard to learn long-term dependencies and capture important context from distant words) Q. how will today's llms like chatgpt will be if the core of their architecture was rnn rahter than transformer?, A:forgetfulness in long multi-turn conversations, less coherent and detailed answers and lose track of formatting, sequence, or logic as the output grows, producing sections that don’t fit well together..
+
+32. LSTM is a special kind of RNN that can remember important information for longer periods in sequences, improving the handling of longer texts by keeping or forgetting data smartly within the sequence.
+
+
+33. Attention is a mathematical shortcut for solving larger context windows faster by telling the model through an emergent mathematical formula which parts of an input to consider and how much. where instead of just Key and Value pairs, a contextual Query is added. 
+
+34. Seminal means something that is very important and influential, often because it introduces new ideas or lays the foundation for future developments.
+
+35. transformers (encoder and decoder)
+![ENCODER](image.png)
+![DECODER](image-1.png)
+The Text-To-Text Transfer Transformer (T5) family of models are examples of transformers.
+
+
+36. However, what really makes LLMs powerful and has opened the door to widespread business use cases is their ability to do specialized tasks without any finetuning, but just simple prompting. 
+
+37. This is called few-shot prompting when it’s trained on smaller labeled data sizes, one-shot, when given only one example, and zero-shot, when the task is totally novel.
+
+38. The five components of linguistics are phonetics, syntax, semantics, pragmatics, and morphology. 
+Phonetics can be added through a multimodal model that processes audio files and is likely to improve LLMs in the future, but current datasets are too small. 
+Syntax is what current models are good at. 
+Semantics is added through the embedding layer. 
+Pragmatics can be added through engineering efforts. 
+Morphology is added in the tokenization layer.
+
+39. 
+
+
+
+
+
+
 
 
 

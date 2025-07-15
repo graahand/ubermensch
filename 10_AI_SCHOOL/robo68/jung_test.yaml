@@ -1,0 +1,17 @@
+# jung_test.yaml
+name: "Alice"
+mbti: "INTJ"
+traits:
+  - "Analytical"
+  - "Strategic"
+  - "Reserved"
+  - "Curious"
+scores:
+  Extraversion: 4
+  Introversion: 16
+  Sensing: 6
+  Intuition: 14
+  Thinking: 17
+  Feeling: 3
+  Judging: 15
+  Perceiving: 5
