@@ -1,0 +1,6 @@
+#llm #rnd 
+[[llms]]
+
+#Qwen
+
+qwen3 have two different types of models, MoE and dense. both types of models are largely based on previous generation of qwen, i.e qwen2.5. Some of the key improvements in the architecture includes the use of grouped query attention (means), swiGLU (activation layer that enhances non-linear expressiveness and training stability), rotary positional encoding (means positions encoded in rotation-based fashion, and), rmsNorm with pre-normalization (means rmsNorm is better than layerNorm, it is applied before main opearations, unclear), removal of qkb-bias and added qk-norm (a normalization on key and values before attention which stablize training for hugely dense models). MoE models are based on dense models as well with specialized expert layers. Some notable improvements includes fine-grained expert segmentation of the tokens for better routing to specialized experts, 128 experts in total with 8 activated per token (means each token is processed bysmall subset of experts to reduce compute), no shared experts (means qwen2.5 moe had some experts shared across layers or tokens) and global batch load balancing loss (which means)

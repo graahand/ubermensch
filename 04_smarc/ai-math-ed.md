@@ -29,9 +29,9 @@ base models should  be reasoning or not, i think reasoning is required but it al
 
 every subjects requires reasoning model.
 
-question answering is primary feature for this project but integration of pedagogy enhanced with AI is another feature. Such pedagogical philosophy for reflective and effective digital learning  is the main focus of mysecondteacher platform. This philosophy can be hugely impacted with the integration of efficient large language models along with AI assisted reflective and effective learning can be sun ma suganda. 
+**question answering is primary feature for this project but integration of pedagogy enhanced with AI is another feature. Such pedagogical philosophy for reflective and effective digital learning  is the main focus of mysecondteacher platform. This philosophy can be hugely impacted with the integration of efficient large language models along with AI assisted reflective and effective learning can be sun ma suganda.** 
 
-can we integrate the llms with the content of mysecondteacher videos lessons? students learns from video sessions and communicate with llms at the same time? this can be absolutely groundbreaking. 
+**can we integrate the llms with the content of mysecondteacher videos lessons? students learns from video sessions and communicate with llms at the same time? this can be absolutely groundbreaking.** 
 
 # dataset development
 
@@ -39,9 +39,20 @@ start with maths dataset, class four content, dataset development automated thro
 
 pdf reader package from python or any OCR technology for correct extraction of the text for vectorization and ......
 
-key consideration: to preserve the way mathematics is expressed and solved unlike language subjects, we need to keep the symbols, flow, concepts intact for quality d
+key consideration: to preserve the way mathematics is expressed and solved unlike language subjects, we need to keep the symbols, flow, concepts intact for quality dataset
 
-####################################
+qwen2.5-math-7b-Instruct will be used for dataset generation. 
+
+## Qwen3 Dataset Generation
+*Compare the performance difference between the models with different parameters counts (Qwen3 family) with rest of the models, the stats is providded below. Provide a clear picture for effective understanding and learning tables, examples, comparision anything. how good are those benchmarks from the real world perspective and performance.*
+
+Benchmarks include general knowledge assessment (MMLU variants), graduate-level question answering (GPQA), math and STEM problem solving (GSM8K, MATH), coding skills (EvalPlus, MBPP), and multilingual capabilities (MGSM, INCLUDE).
+
+considered models
+Qwen3-30B-A3B (3b activated parameters,MoE model), Qwen3-14B(dense model better than previous 2.5 version),
+
+
+###################################################################
 AI MATH EDUCATION – 90-DAY SPRINT PLAN
 
 (1 dataset → 1 model → 1 evaluation, language subjects first)
