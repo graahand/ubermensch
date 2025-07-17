@@ -1,3 +1,5 @@
+
+#anything #smarc 
 # STATS ON FOREIGN EMPLOYMENT
 
 1. News and report of 771,000 Nepali youths ventured abroad for foreign employment in FY 2022/23.According to the Foreign Employment Board, more than 600,000 individuals pursued foreign jobs in the year following the pandemic, and this number surged to over 750,000 in the last fiscal year.The impact of the COVID-19 pandemic has led to a surge in Nepali youths seeking employment opportunities abroad, as opportunities within the country have become limited.

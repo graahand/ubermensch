@@ -1,4 +1,4 @@
-#llm
+#llm #smarc 
 
 [[05_ai_maths]] 
 

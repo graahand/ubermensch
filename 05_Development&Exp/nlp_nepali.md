@@ -1,3 +1,5 @@
+#rnd #nepnlp
+
 # NLP IN nepali
 [[llms]]
 

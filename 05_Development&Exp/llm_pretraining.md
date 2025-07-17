@@ -1,3 +1,4 @@
+#llm #rnd 
 # llm pretraining
 
 [[llms]]

@@ -1,3 +1,4 @@
+#llm #rnd 
 # STOCK PRICE PREDICTION: V2
 
 **Stock Price Prediction Pitch (Simplest Form)**

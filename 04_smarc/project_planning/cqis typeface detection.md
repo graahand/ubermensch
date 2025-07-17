@@ -1,4 +1,4 @@
-
+#smarc #rnd 
 [[03_cqis_planning]]
 
 ### convolutional neural network for typeface classification

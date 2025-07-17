@@ -1,3 +1,5 @@
+#rnd #linux
+
 ** Create autostart entry to replace mutter(ubuntu default window manager) with i3 window manager.**
 
 

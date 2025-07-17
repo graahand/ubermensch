@@ -1,4 +1,4 @@
-#timeseries
+#timeseries #rnd 
 [[stock_price_prediction]]
 
 # Time series forecasting with foundational models 

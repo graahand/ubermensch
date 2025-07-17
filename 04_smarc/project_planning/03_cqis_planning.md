@@ -1,3 +1,4 @@
+#smarc #rnd 
 # Central Quality Inspection System
 
 this system is aims to identify design flaws using AI

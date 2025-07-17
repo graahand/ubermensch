@@ -1,5 +1,5 @@
 [[llms]]
-
+#llm #rnd
 # LIBRARIES FOR FINETUNING LLMS WITH LOW RESOURCES 
 
 peft, bitsandbytes,accelerate, einops, trl

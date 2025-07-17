@@ -1,4 +1,6 @@
 [[computer-vision]]
+#rnd #compv
+
 
 # Data augmentation using brightness and darkness to enhance the performance of yolo7 object detection algorithm 
 [Abdulghani M. Abdulghani]

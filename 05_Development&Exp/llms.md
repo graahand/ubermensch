@@ -1,7 +1,7 @@
 # LLMS 
 
 1. [kimi-ai, a vision language model with only 2.8B active parameters, Mixture of Experts model](https://huggingface.co/moonshotai/Kimi-VL-A3B-Instruct)
-
+#llm #rnd 
 
 
 

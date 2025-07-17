@@ -1,3 +1,5 @@
+#rnd #echo
+
 # robo68
 
 phase 1: the robot at a core will be powered by a instruct based llm specifically finetuned for chatting and question answering, tuned/designed for engaging with the individual like chatgpt or siri. 

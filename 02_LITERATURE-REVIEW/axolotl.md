@@ -1,3 +1,4 @@
+#rnd #llm 
 ## Axolotl (alternative to hugginface/transformer)
 
 It is a tool to full finetune model, parameter efficient finetuning and alignment techniques with support for multiple model architectures like llama, mixtral, phi, qwen, mixtral-moe, gemma, gpt-j, pythia etc. 

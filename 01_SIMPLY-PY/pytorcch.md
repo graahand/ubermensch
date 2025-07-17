@@ -1,3 +1,4 @@
+#rnd #compv #llm 
 # PyTorch 
 
 Deep learning is inspired by how human brain learns where neuron of brain resembles neural networks.

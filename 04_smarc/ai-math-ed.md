@@ -1,4 +1,4 @@
-#llm #smarc
+#llm #smarc #rnd
 [[05_ai_maths]]
 [[llms]]
 
@@ -23,7 +23,7 @@
 
 **garbage in garbage out**
 
-dataset preparation should take maximum time but fixed and very actionable planing, one dataset, one model one evaluation at a time. don't start with math, start with nepali,social, english (a language subject first).
+dataset preparation should take maximum time but fixed and very actionable planing, one dataset, one model one evaluation at a time. we are starting with maths first from class 4 to class 10 first as the mathematics from class 11-12 is a bit more complex. 
 
 base models should  be reasoning or not, i think reasoning is required but it also increases  the  resource requirement along the the throughput rate and latency. 
 
@@ -33,7 +33,13 @@ question answering is primary feature for this project but integration of pedago
 
 can we integrate the llms with the content of mysecondteacher videos lessons? students learns from video sessions and communicate with llms at the same time? this can be absolutely groundbreaking. 
 
+# dataset development
 
+start with maths dataset, class four content, dataset development automated through a llm where a book is provided as a file performing Retrieval Augmented Generation for generating the questions-answer pairs along with important concepts and pedagogical and reflective learning emphasized. 
+
+pdf reader package from python or any OCR technology for correct extraction of the text for vectorization and ......
+
+key consideration: to preserve the way mathematics is expressed and solved unlike language subjects, we need to keep the symbols, flow, concepts intact for quality d
 
 ####################################
 AI MATH EDUCATION – 90-DAY SPRINT PLAN
@@ -46,6 +52,8 @@ Phase 0  (Week 0) – Project Skeleton
   – 1 × RTX 4090 24 GB (local PC) for 7-8 B fine-tunes  
   – Google-Colab-Pro+ vouchers (≈ 100 H100-minutes / month) for bigger runs  
 • Tooling lock-in: PyTorch 2.2, transformers 4.40, xtuner 0.1.20, unsloth 2024.5, llama.cpp+vLLM.
+
+
 
 -------------------------------------------------
 Phase 1 – NEPALI LANGUAGE MODEL  (Weeks 1-4)

@@ -1,3 +1,4 @@
+#rnd #ra 
 # Critically Review a Paper
 
 **Enhancing Criticality:**

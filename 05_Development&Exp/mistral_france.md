@@ -1,5 +1,5 @@
 #llm
-
+#rnd 
 [[llms]]
 [[05_ai_maths]]
 

@@ -1,4 +1,6 @@
+
 # llama.cpp
+#rnd #smarc #llm 
 
 [[05_ai_maths#ollama, llama.cpp and gguf for efficient inference and deployment]]
 

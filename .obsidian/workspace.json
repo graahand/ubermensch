@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "02ab8cc903c7a85b",
+        "id": "b3d55392c7a808c2",
         "type": "tabs",
         "children": [
           {
-            "id": "4249f225e67250fe",
+            "id": "04a7f51ddf35e351",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -161,19 +161,38 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4249f225e67250fe",
+  "active": "04a7f51ddf35e351",
   "lastOpenFiles": [
-    "05_Development&Exp/mistral_france.md",
     "10_AI_SCHOOL/who_am_i.md",
-    "04_smarc/project_planning/cqis typeface detection.md",
-    "04_smarc/project_planning/03_cqis_planning.md",
-    "04_smarc/project_planning/05_ai_maths.md",
-    "04_smarc/project_planning/02_assisted_vision.md",
-    "04_smarc/project_planning/01_3d_reconstruction_sdc_feasible.md",
+    "10_AI_SCHOOL/talk_bot.md",
+    "10_AI_SCHOOL/robo68_plan.md",
+    "10_AI_SCHOOL/Bibek_Poudel_CV.pdf",
+    "09_Miscellaneous/real_life_glitch.md",
+    "09_Miscellaneous/LLMs in Production (2023).pdf",
+    "09_Miscellaneous/abroad_planning_nepal.md",
+    "06_hubermanlab/hubermanlab_1.md",
+    "05_Development&Exp/nlp_nepali.md",
+    "05_Development&Exp/moondream_finetune.md",
+    "05_Development&Exp/mistral_france.md",
+    "05_Development&Exp/math-problems.md",
+    "05_Development&Exp/llms.md",
+    "05_Development&Exp/llm_pretraining.md",
+    "05_Development&Exp/llama.cpp.md",
+    "05_Development&Exp/issac_ros.md",
+    "05_Development&Exp/image-1.png",
+    "05_Development&Exp/foundational_model_ts_forecast.md",
+    "05_Development&Exp/flowmath.md",
+    "05_Development&Exp/dataset_development.md",
+    "05_Development&Exp/custom_slideshow.md",
+    "05_Development&Exp/cquis.png",
+    "05_Development&Exp/car.jpg",
+    "00_TODO/todo_1.md",
+    "01_SIMPLY-PY/transformers_from_scratch.md",
+    "01_SIMPLY-PY/rudra.md",
+    "01_SIMPLY-PY/rest_api.md",
     "01_SIMPLY-PY/reinforcement_learning.md",
-    "01_SIMPLY-PY/install_i3_ubuntu.md",
-    "01_SIMPLY-PY/deepfake_detection.md",
-    "01_SIMPLY-PY/day2.md",
-    "01_SIMPLY-PY/computer-vision.md"
+    "01_SIMPLY-PY/pytorcch.md",
+    "01_SIMPLY-PY/proposal_rudra.md",
+    "01_SIMPLY-PY/lstm.md"
   ]
 }

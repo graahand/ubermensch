@@ -1,3 +1,4 @@
+#rnd #compv 
 [[computer-vision]]
 
 # DEEPFAKE DETECTION

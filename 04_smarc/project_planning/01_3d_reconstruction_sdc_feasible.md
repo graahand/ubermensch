@@ -1,3 +1,4 @@
+#smarc #rnd 
 # Feasibilty Study and Prototyping with 3d reconstruction from 2d images. 
 
 self driving car lacks a advance real world navigation and localization mechanism which is often required for advancing with the development of autonomous vehicles which have the applications areas such as industry robots at coca-cola factory, rod haru weilding garne thauma, aru applications areas, an

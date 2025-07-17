@@ -1,3 +1,5 @@
+
+#rnd #echo 
 # talkbot with raspberry pi
 
 
