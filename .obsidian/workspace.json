@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ab37b4a4d1602ca4",
+        "id": "2e1d9f8a43aeb8ab",
         "type": "tabs",
         "children": [
           {
-            "id": "0e8602e432bfbcda",
+            "id": "b645a6db0c0febb8",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "ai-math-ed"
             }
-          },
-          {
-            "id": "7db09ae7c6cc4d13",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "05_Development&Exp/22067316_Bibek_Poudel_AML.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "22067316_Bibek_Poudel_AML"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -153,19 +140,21 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "04_smarc/ai-math-ed.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of ai-math-ed"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 568.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -178,17 +167,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7db09ae7c6cc4d13",
+  "active": "b645a6db0c0febb8",
   "lastOpenFiles": [
+    "09_Miscellaneous/2502.17387v1.pdf",
+    "09_Miscellaneous/Unconfirmed 799249.crdownload",
+    "05_Development&Exp/qwen.md",
+    "Chats/New Chat.md",
+    "Chats",
+    "04_smarc/ai-math-ed.md",
     "05_Development&Exp/22067316_BibekPoudel_FYP.pdf",
+    "05_Development&Exp/22067316_Bibek_Poudel_AML.pdf",
     "05_Development&Exp/22067316_BibekPoudel.pdf",
     "05_Development&Exp/Unconfirmed 828137.crdownload",
-    "05_Development&Exp/22067316_Bibek_Poudel_AML.pdf",
     "05_Development&Exp/22067316_Bibek_Poudel.pdf",
     "05_Development&Exp/22067316_Bibek_Poudel_Computer Vision.pdf",
     "04_smarc/project_planning/05_ai_maths.md",
-    "05_Development&Exp/qwen.md",
-    "04_smarc/ai-math-ed.md",
     "05_Development&Exp/custom_slideshow.md",
     "05_Development&Exp/dataset_development.md",
     "09_Miscellaneous/qwen3-technical-report.pdf",
@@ -197,9 +190,7 @@
     "10_AI_SCHOOL/who_am_i.md",
     "10_AI_SCHOOL/talk_bot.md",
     "10_AI_SCHOOL/robo68_plan.md",
-    "10_AI_SCHOOL/Bibek_Poudel_CV.pdf",
     "09_Miscellaneous/real_life_glitch.md",
-    "09_Miscellaneous/LLMs in Production (2023).pdf",
     "09_Miscellaneous/abroad_planning_nepal.md",
     "06_hubermanlab/hubermanlab_1.md",
     "05_Development&Exp/nlp_nepali.md",
@@ -216,7 +207,6 @@
     "05_Development&Exp/cquis.png",
     "05_Development&Exp/car.jpg",
     "00_TODO/todo_1.md",
-    "01_SIMPLY-PY/transformers_from_scratch.md",
-    "01_SIMPLY-PY/rudra.md"
+    "01_SIMPLY-PY/transformers_from_scratch.md"
   ]
 }

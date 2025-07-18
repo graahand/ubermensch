@@ -75,7 +75,7 @@ for res in result:
 
 
 iii. based on the questions, question's solutions and concepts found in the pdf file, the task of the large language model is to create 10k maths question answer  pairs from that same pdf file provided to it. the pdf file provided to the model is a part of text book from Nepal's mathematics curriculum.
-iv. the pdf file may contains the question's solutions, examples, questions only and concepts, the llm need to improvise the example solutions adding pedagogical aspect, solve the answers to the questions and include the concepts where required along.
+iv. the json file may contains the question's solutions, examples, questions only and concepts, the llm need to improvise the example solutions adding pedagogical aspect, solve the answers to the questions and include the concepts where required along.
 v. dataset generation format:
 		{
 	  "question": "What is the value of the integral \\(\\int_0^1 x dx\\)?",
@@ -86,7 +86,8 @@ v. dataset generation format:
 	}
 
 
-write a python script that loads a 
+1. TESTING WITH DEEPSEEK-VL-TINY  MODEL for extraction instead, test if it works otherwise need a change in the approach or just replace the pdf file. search for other sources for dataset collection. 
+2. Found two other maths book pdf file which are actually pdf file rather than a scanned image, so any pdf extracter might  work, testing today.(successfully extracted the text from the pdf file downloaded from web which is purely a pdf file)
 ## Qwen3 Dataset Generation
 *Compare the performance difference between the models with different parameters counts (Qwen3 family) with rest of the models, the stats is providded below. Provide a clear picture for effective understanding and learning tables, examples, comparision anything. how good are those benchmarks from the real world perspective and performance.*
 
@@ -95,5 +96,6 @@ Benchmarks include general knowledge assessment (MMLU variants), graduate-level 
 considered models
 Qwen3-30B-A3B (3b activated parameters,MoE model), Qwen3-14B(dense model better than phttps://huggingface.co/Qwen/Qwen2.5-VL-7B-Instructrevious 2.5 version),
 
-
+**Desiderata"** is a plural noun derived from Latin, meaning **"things that are desired or needed."**
+	- _The desiderata for a successful project include clear communication, adequate funding, and skilled personnel.
 ###################################################################
