@@ -41,109 +41,59 @@ pdf reader package from python or any OCR technology for correct extraction of t
 
 key consideration: to preserve the way mathematics is expressed and solved unlike language subjects, we need to keep the symbols, flow, concepts intact for quality dataset
 
-qwen2.5-math-7b-Instruct will be used for dataset generation. 
+qwen2.5-math-7b-Instruct will be used for dataset generation or a large vision language model which can extract and generate efficently? i don't know whether the lvlm can work efficiently  in case? 
+https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 
+
+
+## prompts
+
+write a python script that allow clipping the pdf file based on the page numbers, i mean to say i pass from what page to what page the pdf file's content is required, the script remove all other pages and only keep those pages that are mentioned or passed to the script. just a single function will be enough. 
+
+Write a python script or multiple related scripts with their names that:
+i. load a model using llama-cpp (llama-server -hf modelspace/modelname:q8_0)
+ii. extract the text from the pdf file provided keeping the mathematical symbols and flow of solution intact.
+	the  pdf file was a image-scanned pdf file which cannot be extracted with the pdf tools like pdfplumber of pypdf2 due to which use of OCR tool in extraction script is necessary. paddle OCR is one the best extraction package available for free. Let's use that  instead. 
+	sample code for paddleOCR from original repository: 
+	
+	''' # Initialize PaddleOCR instance
+	from paddleocr import PaddleOCR
+	ocr = PaddleOCR(
+    use_doc_orientation_classify=False,
+    use_doc_unwarping=False,
+    use_textline_orientation=False)'''
+
+# Run OCR inference on a sample image 
+result = ocr.predict(
+    input="https://paddle-model-ecology.bj.bcebos.com/paddlex/imgs/demo_image/general_ocr_002.png")
+
+# Visualize the results and save the JSON results
+for res in result:
+    res.print()
+    res.save_to_img("output")
+    res.save_to_json("output")
+
+
+iii. based on the questions, question's solutions and concepts found in the pdf file, the task of the large language model is to create 10k maths question answer  pairs from that same pdf file provided to it. the pdf file provided to the model is a part of text book from Nepal's mathematics curriculum.
+iv. the pdf file may contains the question's solutions, examples, questions only and concepts, the llm need to improvise the example solutions adding pedagogical aspect, solve the answers to the questions and include the concepts where required along.
+v. dataset generation format:
+		{
+	  "question": "What is the value of the integral \\(\\int_0^1 x dx\\)?",
+	  "answer": "The integral of x from 0 to 1 is (1/2)x^2 evaluated from 0 to 1, which gives (1/2)*1^2 - (1/2)*0^2 = 1/2. \\boxed{\\frac{1}{2}}",
+	  "answer_plain": "1/2",
+	  "topic": "calculus",
+	  "difficulty": "easy"
+	}
+
+
+write a python script that loads a 
 ## Qwen3 Dataset Generation
 *Compare the performance difference between the models with different parameters counts (Qwen3 family) with rest of the models, the stats is providded below. Provide a clear picture for effective understanding and learning tables, examples, comparision anything. how good are those benchmarks from the real world perspective and performance.*
 
 Benchmarks include general knowledge assessment (MMLU variants), graduate-level question answering (GPQA), math and STEM problem solving (GSM8K, MATH), coding skills (EvalPlus, MBPP), and multilingual capabilities (MGSM, INCLUDE).
 
 considered models
-Qwen3-30B-A3B (3b activated parameters,MoE model), Qwen3-14B(dense model better than previous 2.5 version),
+Qwen3-30B-A3B (3b activated parameters,MoE model), Qwen3-14B(dense model better than phttps://huggingface.co/Qwen/Qwen2.5-VL-7B-Instructrevious 2.5 version),
 
 
 ###################################################################
-AI MATH EDUCATION – 90-DAY SPRINT PLAN
-
-(1 dataset → 1 model → 1 evaluation, language subjects first)
-
-Phase 0  (Week 0) – Project Skeleton  
-• Git repo: `mst-nepali-llm/` with folders `data/`, `models/`, `eval/`, `infra/`  
-• Decide hardware budget:  
-  – 1 × RTX 4090 24 GB (local PC) for 7-8 B fine-tunes  
-  – Google-Colab-Pro+ vouchers (≈ 100 H100-minutes / month) for bigger runs  
-• Tooling lock-in: PyTorch 2.2, transformers 4.40, xtuner 0.1.20, unsloth 2024.5, llama.cpp+vLLM.
-
-
-
--------------------------------------------------
-Phase 1 – NEPALI LANGUAGE MODEL  (Weeks 1-4)
-1. Dataset (single JSONL)  
-   • 5 k CDC Nepali textbook Q-A pairs (manual scrape)  
-   • 2 k grammar-rule examples w/ explanations  
-   • 1 k creative-writing prompts + graded samples  
-   • 500 synthetic dialogues (translate Alpaca-Nepali, then manual QA)  
-   → Final 9 k rows, tokenised 2 M tokens. 80/10/10 split.
-
-2. Base model choice  
-   • OPENWiseyak-7B (Nepali continual-pretrained Llama-3) – already fits 24 GB VRAM.  
-   • If memory tight → 4-bit QLoRA (r=64, α=128, 4-bit NF4).
-
-3. Fine-tune on local PC  
-   ```
-   xtuner train configs/nepali_qlora.py --deepspeed zero2
-   ```
-   3 epochs, 30 min / epoch on 4090.
-
-4. Evaluation  
-   • Rouge-L ≥ 0.55 vs reference answers  
-   • Pedagogical rubric: clarity, grade-level vocabulary, cultural context.  
-   • Export GGUF → llama.cpp server (4-bit) → latency 120 ms / 512 tokens.
-
--------------------------------------------------
-Phase 2 – SOCIAL STUDIES  (Weeks 5-8)  
-Same pattern: scrape 6 k CDC Q-A, 1 k map-based short-answer, 500 essay samples.  
-Fine-tune Nepali model with LoRA adapters (`--adapter_path social_lora`).  
-Merge adapters for single multi-subject checkpoint if VRAM allows.
-
--------------------------------------------------
-Phase 3 – ENGLISH  (Weeks 9-12)  
-Reuse Llama-3-8B-Instruct, add 7 k English-Nepali parallel grammar+writing samples.  
-Switch to vLLM backend for higher throughput (≈ 500 req/s on 1×4090).
-
--------------------------------------------------
-Phase 4 – MATH & OPTIONAL MATH  (Weeks 13-18)  
-1. Dataset  
-   • 8 k CDC Class-4-12 math problems (incl. optional)  
-   • Each row: problem, step-by-step solution, final answer, concept tag.  
-   • Geometry: 1 k diagrams + LaTeX captions (render diagrams → base64).  
-   • Sets: 500 word-problems → formal notation.
-
-2. Model strategy  
-   • Base: **DeepSeek-Math-7B** (reasoning-oriented, 30 % smaller than Llama-3-8B).  
-   • Full fine-tune 1 epoch on Colab H100 (mixed-precision fp16).  
-   • 4-bit GGUF post-train for on-prem.
-
-3. Evaluation  
-   • Exact-match accuracy ≥ 70 % on unseen CDC questions.  
-   • Step-level correctness judged by Sympy verification.
-
--------------------------------------------------
-Phase 5 – SCIENCE  (Weeks 19-24)  
-Same pipeline; include 5 k Q-A, 1 k experiment explanations.  
-Use multi-modal adapter to reference diagrams (clip-interrogator for images).
-
--------------------------------------------------
-Integration with MySecondTeacher Videos  
-• Add transcript-time-aligned JSON to each video lesson.  
-• vLLM endpoint receives: `{"video_id": "ss_8_3", "timestamp": 123, "student_query": "..."}`  
-• Prompt pattern:  
-  ```
-  <context>Video transcript: {transcript_snippet}</context>
-  <question>{student_query}</question>
-  <instruction>Answer in Nepali, cite timestamp, give follow-up question.</instruction>
-  ```
-→ Grounded chatbot inside MST web player.
-
-Pedagogy Hooks  
-• Reflection prompt after every 3 interactions: “What did you learn from this exchange?”  
-• Store reflections in local SQLite; nightly aggregate → teacher dashboard.
-
--------------------------------------------------
-Resource & Cost Reality Check  
-• Local PC electricity ≈ $3/week.  
-• Colab-Pro+ monthly ≈ $50 (self-funded).  
-• All checkpoints < 20 GB; push to HuggingFace private repo for backup.
-
-Deliverable at end of 24 weeks:  
-Five LoRA adapters + merged 7-8 B multilingual checkpoint, llama.cpp+vLLM serving scripts, and API contract for MST frontend.

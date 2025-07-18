@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b3d55392c7a808c2",
+        "id": "ab37b4a4d1602ca4",
         "type": "tabs",
         "children": [
           {
-            "id": "04a7f51ddf35e351",
+            "id": "0e8602e432bfbcda",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "ai-math-ed"
             }
+          },
+          {
+            "id": "7db09ae7c6cc4d13",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "05_Development&Exp/22067316_Bibek_Poudel_AML.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "22067316_Bibek_Poudel_AML"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -165,12 +178,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "04a7f51ddf35e351",
+  "active": "7db09ae7c6cc4d13",
   "lastOpenFiles": [
+    "05_Development&Exp/22067316_BibekPoudel_FYP.pdf",
+    "05_Development&Exp/22067316_BibekPoudel.pdf",
+    "05_Development&Exp/Unconfirmed 828137.crdownload",
+    "05_Development&Exp/22067316_Bibek_Poudel_AML.pdf",
+    "05_Development&Exp/22067316_Bibek_Poudel.pdf",
+    "05_Development&Exp/22067316_Bibek_Poudel_Computer Vision.pdf",
+    "04_smarc/project_planning/05_ai_maths.md",
+    "05_Development&Exp/qwen.md",
+    "04_smarc/ai-math-ed.md",
+    "05_Development&Exp/custom_slideshow.md",
+    "05_Development&Exp/dataset_development.md",
     "09_Miscellaneous/qwen3-technical-report.pdf",
     "09_Miscellaneous/Unconfirmed 880871.crdownload",
-    "05_Development&Exp/qwen.md",
-    "05_Development&Exp/dataset_development.md",
     "01_SIMPLY-PY/deepfake_detection.md",
     "10_AI_SCHOOL/who_am_i.md",
     "10_AI_SCHOOL/talk_bot.md",
@@ -191,13 +213,10 @@
     "05_Development&Exp/image-1.png",
     "05_Development&Exp/foundational_model_ts_forecast.md",
     "05_Development&Exp/flowmath.md",
-    "05_Development&Exp/custom_slideshow.md",
     "05_Development&Exp/cquis.png",
     "05_Development&Exp/car.jpg",
     "00_TODO/todo_1.md",
     "01_SIMPLY-PY/transformers_from_scratch.md",
-    "01_SIMPLY-PY/rudra.md",
-    "01_SIMPLY-PY/rest_api.md",
-    "01_SIMPLY-PY/reinforcement_learning.md"
+    "01_SIMPLY-PY/rudra.md"
   ]
 }
