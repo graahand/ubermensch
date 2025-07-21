@@ -99,3 +99,38 @@ Qwen3-30B-A3B (3b activated parameters,MoE model), Qwen3-14B(dense model better 
 **Desiderata"** is a plural noun derived from Latin, meaning **"things that are desired or needed."**
 	- _The desiderata for a successful project include clear communication, adequate funding, and skilled personnel.
 ###################################################################
+
+##  Bench marking and Testing Models for AI-Math
+benchmarks the selective models on evaluation dataset crafted using the questions from Nepali curriculum math books and past questions. 
+
+How to collect?
+
+extract question with latex extractor,
+create question answer pairs using some big model and verify its correctness.
+benchmarks how many did the model got correct?
+additionally keep remember adding reflective learning with  the model.
+
+##### models comparison
+qwen2.5-7b and qwen3-8b as Nepali math question solving model bench-marking the performance difference.
+According to the result provided from Perplexity AI (sourced arXiv papers, reddit discussion and Qwen official documentation and results,  qwen3-8b is better in terms of mathematical reasoning and problem-solving. trained dataset is larger in case of qwen3-8b model with larger token contexts. 
+
+testing the deepseek math model [[[llama-server -hf unsloth/DeepSeek-R1-Distill-Qwen-7B-GGUF:Q8_0]]}, a promising deepseek model (rest of the description after testing the model and a benchmark itself with the evaluation dataset created.)
+
+this model have input tokens limit of 128,000 and  output token limits of 32768.
+
+### models  comparison
+
+1. DeepSeek-R1-0528-Qwen3-8B is likely the best for Nepalese maths curriculum topics, excelling in advanced reasoning tasks like calculus and algebra.
+2. Qwen/Qwen3-8B appears good but is outperformed by its distilled version, with less specific data available.
+3. DeepSeek-R1-0528-Qwen3-8B and DeepSeek-R1-Distill-Qwen-7B seem best for advanced areas like calculus and analytic geometry
+4. topics include algebra, trigonometry, calculus, conceptual problems, word problems, arithmetic, business mathematics, advanced calculus, analytic geometry, computational methods, vectors, mechanics, mathematics for economics and finance, number concepts and operations, and coordinate geometry.
+5. this model ranked above among 4 different tested models: DeepSeek-R1-0528-Qwen3-8B
+6. DeepSeek-R1-0528-Qwen3-8B and Qwen/Qwen3-8B likely have the longest context lengths at 131,072 tokens, while DeepSeek-R1-Distill-Llama-8B and DeepSeek-R1-Distill-Qwen-7B seem to have 32,768 tokens, which may limit longer tasks.
+
+
+
+################
+
+AI maths quiz generation along with answers and short explanation using a strong llm, the entire syllabus can fit within the system prompt, so far the system prompt for grade 11 has been prepared. The quiz will be generated beforehand along with a very short explanation, in production a smaller llm like qwen3 0.6b will be given the short explanation and question with answer to provide longer explanation along with a chat interface for the student
+
+

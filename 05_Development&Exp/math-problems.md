@@ -6,9 +6,9 @@
 
 ## Basic Arithmetic
 
-What is 123 + 456?
-What is 1000 - 789?
-What is 12 × 13?
+What is 123 + 456? (passed)
+What is 1000 - 789? ()
+What is 12 × 13? (passed)
 What is 144 ÷ 12?
 
 ## Algebra

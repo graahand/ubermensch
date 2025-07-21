@@ -125,7 +125,101 @@ for now research on vlms is on hold.
 college specific words that are correct but flagged as incorrect like pokhara university for apex college, BSc(hons) computing for islington college, and so on
 such words shouldn't be marked as incorrect. 
 
+##########################
 
+## CQIS Meeting minutes July 20, 2025
+
+font detection works mildly, 
+color palette also works mildly,
+logo placement check for every sizes, not perfect,
+text extraction and grammar checking working  fine, 
+allowed words setting by the admin for different organization mildly working, 
+white space checker also working,
+pix-elated images not working,(laplacian, decimation difference, edge detection consistency, frequency domain analysis, gradient magnitude statistics, superpixel segmentation(clusters of similar neighbouring pixels, blurred regions have low texture variance and weak edges due to smoothing which can ), )
+
+what should be done next?
+**font detection, color palette, logo placement, blurred out images existing condition and improvement planning**
+
+**action plan for those improvements, what discussed, deadlines set for planned actions.** 
+
+1. production ma gako xaina (feedback)
+2. color palette detection(only extracts the colors, doesn't check the actual placement)
+3. blur detection (not today)
+4. allowed words. 
+5. standee add garnu (criteria)
+6. 
+
+a python script that uses vision language model to extract the dataset in json format, the extracted text should be in latex format 
+#################################################################
+
+BURN (RUST NN LIBRARY)
+
+
+
+**01-ai/Yi-1.5-34B-32K**  model fits within the resources of our pc, which will be used for generating the answers for extracted maths questions from the nepalese curriculum. 
+the generated answers will be set as the correct labels for evaluating the maths-model for benchmarking on the actual real world dataset. 
+
+
+
+*if a gguf model is of size 36gb and the system have 24gb of vram, 64gb or ram how will the ollama will utilizes the resources.*
+
+VRAM will be utilized for accelerating the model inference along with the CPU offloading for required additional memory (RAM).
+
+
+
+a python script that loads visual  langugage model qwen2.5-vl-3b-instruct,  this model should be able to loaded using ollama, 
+(ollama run hf.co/unsloth/Qwen2.5-VL-3B-Instruct-GGUF:Q8_0)
+the pdf file will be passed and every pages needs conversion to image and then extraction from that  image. 
+code   should be minimalist, free from unnecessary comments line after  line, instead comments should explain how the parameters or any part of code is being used internally or in simple way. 
+this is how i intend to run  the python file: python extract.py --file questions.pdf --prompt "extract all the questions from the provided image/pdf file(after pdf pages are converted to image)" 
+simply convert each page in the pdf to an image then submit it llm asking it to convert to markdown preserving tables, lists, headers, symbols and mathematics language etc. then combine all the markdown back into the final document
+
+
+#### process
+
+Base64 is a way of encoding arbitrary binary data (like an image file’s raw bytes) into plain ASCII text, so that it can safely travel through systems that only expect text (for example, JSON payloads or email bodies).
+
+but does the conversion to base64 actually keeps the content from the pdf file intact? does the visual language model like qwen2.5-vl-3b model directly takes the  png file or am i confused regarding this?
+ans: Base64 is reversible and lossless, why do it? (Because JSON (or many HTTP clients) only handle text)
+**Model input** is always numeric tensors—whether you fed them from a local PIL image or the server decoded them for you.
+
+
+###
+[mineru](https://opendatalab.github.io/MinerU/usage/quick_usage/#advanced-usage-via-api-webui-sglang-clientserver) pdf/image to text extractor advance extraction tool based on  paddleOCR accelerated using sglang backend
+, later the extracted text is passed to llm like qwen3:8b to create json format questions sets from this corpus:
+
+ mineru -p class-9-qp.pdf -o output_mineru: this gave absolutely amazing results a json file exactly I wanted. need preprocessing with a llm now to create benchmark questions.
+ 
+
+
+gemini is good at creating such questions answer pairs, kimi is better
+
+AIzaSyD7ogKDnYk_KUnGslnfG4NJ-OAxd-5z2nA
+
+curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent" \
+  -H 'Content-Type: application/json' \
+  -H 'X-goog-api-key: GEMINI_API_KEY' \
+  -X POST \
+  -d '{
+    "contents": [
+      {
+        "parts": [
+          {
+            "text": "Explain how AI works in a few words"
+          }
+        ]
+      }
+    ]
+  }'
+
+check  cosine similarity between the existing json and the preprocessed to identify the changes or differences before/after.
+
+*preprocess the content of the json file and include question only along with adding class10 and topic name [class10][topic_name].  if any missing text, part or question found then fill it contextually.* 
+
+this prompt will generate tthe type of dataset i want.
+
+
+1. extracted the past question papers from class4-class12 maths, one past paper or model question paper for each class. 
 
 
 
