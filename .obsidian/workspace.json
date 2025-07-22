@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_SIMPLY-PY/rudra.md",
+                "file": "04_smarc/project_planning/futuruma.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "rudra"
+              "title": "futuruma"
             }
           }
         ],
@@ -184,6 +184,8 @@
   },
   "active": "e898fd8ca5bbf367",
   "lastOpenFiles": [
+    "01_SIMPLY-PY/rudra.md",
+    "04_smarc/project_planning/futuruma.md",
     "04_smarc/ai-math-ed.md",
     "04_smarc/project_planning/03_cqis_planning.md",
     "04_smarc/project_planning/05_ai_maths.md",
@@ -210,9 +212,7 @@
     "01_SIMPLY-PY/deepfake_detection.md",
     "01_SIMPLY-PY/day2.md",
     "01_SIMPLY-PY/computer-vision.md",
-    "04_smarc/project_planning/cqis typeface detection.md",
     "[llama-server -hf unsloth",
-    "04_smarc/project_planning/01_3d_reconstruction_sdc_feasible.md",
     "09_Miscellaneous/2502.17387v1.pdf",
     "09_Miscellaneous/Unconfirmed 799249.crdownload",
     "Chats",
