@@ -25,12 +25,14 @@
             "id": "e898fd8ca5bbf367",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "09_Miscellaneous/cudabook.pdf"
+                "file": "04_smarc/project_planning/futuruma.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "cudabook"
+              "icon": "lucide-file",
+              "title": "futuruma"
             }
           }
         ]
@@ -90,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "a42c8c6baa5b2614",
@@ -181,21 +184,12 @@
   },
   "active": "15e74d225c0aa0fc",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "01_SIMPLY-PY/reinforcement_learning.md",
-    "04_smarc/project_planning/futuruma.md",
-=======
-    "09_Miscellaneous/cudabook.pdf",
-    "09_Miscellaneous/qwen3-technical-report.pdf",
-    "09_Miscellaneous/LLMs in Production (2023).pdf",
-    "10_AI_SCHOOL/robo68_plan.md",
-    "04_smarc/project_planning/futuruma.md",
-    "01_SIMPLY-PY/rest_api.md",
->>>>>>> 13c9ef143d198457805d9836c0ebb8c772124df0
-    "01_SIMPLY-PY/rudra.md",
-    "04_smarc/ai-math-ed.md",
-    "04_smarc/project_planning/03_cqis_planning.md",
     "04_smarc/project_planning/05_ai_maths.md",
+    "04_smarc/project_planning/futuruma.md",
+    "04_smarc/ai-math-ed.md",
+    "01_SIMPLY-PY/reinforcement_learning.md",
+    "01_SIMPLY-PY/rudra.md",
+    "04_smarc/project_planning/03_cqis_planning.md",
     "05_Development&Exp/moondream_finetune.md",
     "05_Development&Exp/mistral_france.md",
     "05_Development&Exp/math-problems.md",
@@ -216,11 +210,8 @@
     "01_SIMPLY-PY/lstm.md",
     "01_SIMPLY-PY/install_i3_ubuntu.md",
     "01_SIMPLY-PY/docker.md",
-<<<<<<< HEAD
     "01_SIMPLY-PY/deepfake_detection.md",
     "01_SIMPLY-PY/day2.md",
-=======
->>>>>>> 13c9ef143d198457805d9836c0ebb8c772124df0
     "[llama-server -hf unsloth",
     "09_Miscellaneous/2502.17387v1.pdf",
     "09_Miscellaneous/Unconfirmed 799249.crdownload",
@@ -228,6 +219,8 @@
     "05_Development&Exp/22067316_BibekPoudel_FYP.pdf",
     "05_Development&Exp/22067316_Bibek_Poudel_AML.pdf",
     "05_Development&Exp/22067316_BibekPoudel.pdf",
+    "05_Development&Exp/Unconfirmed 828137.crdownload",
+    "05_Development&Exp/22067316_Bibek_Poudel.pdf",
     "05_Development&Exp/image-1.png",
     "05_Development&Exp/car.jpg"
   ]

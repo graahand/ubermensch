@@ -112,6 +112,11 @@ additionally keep remember adding reflective learning with  the model.
 
 ## evaluation dataset collection
 
+1. extract the questions answers from the past papers
+2. [minerU](https://github.com/opendatalab/MinerU) extracts the data from the pdf file in json format. 
+3. the extracted json file is unstructured and unprocessed content. 
+4. this unstructured and raw data needs preprocessing. the preprocessing will be done using a large language model (automation with a script)
+5. 
 
 ##### models comparison
 qwen2.5-7b and qwen3-8b as Nepali math question solving model bench-marking the performance difference.
