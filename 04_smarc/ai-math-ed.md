@@ -110,6 +110,9 @@ create question answer pairs using some big model and verify its correctness.
 benchmarks how many did the model got correct?
 additionally keep remember adding reflective learning with  the model.
 
+## evaluation dataset collection
+
+
 ##### models comparison
 qwen2.5-7b and qwen3-8b as Nepali math question solving model bench-marking the performance difference.
 According to the result provided from Perplexity AI (sourced arXiv papers, reddit discussion and Qwen official documentation and results,  qwen3-8b is better in terms of mathematical reasoning and problem-solving. trained dataset is larger in case of qwen3-8b model with larger token contexts. 
