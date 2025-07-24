@@ -184,8 +184,9 @@
   },
   "active": "e898fd8ca5bbf367",
   "lastOpenFiles": [
-    "01_SIMPLY-PY/rudra.md",
+    "01_SIMPLY-PY/reinforcement_learning.md",
     "04_smarc/project_planning/futuruma.md",
+    "01_SIMPLY-PY/rudra.md",
     "04_smarc/ai-math-ed.md",
     "04_smarc/project_planning/03_cqis_planning.md",
     "04_smarc/project_planning/05_ai_maths.md",
@@ -211,7 +212,6 @@
     "01_SIMPLY-PY/docker.md",
     "01_SIMPLY-PY/deepfake_detection.md",
     "01_SIMPLY-PY/day2.md",
-    "01_SIMPLY-PY/computer-vision.md",
     "[llama-server -hf unsloth",
     "09_Miscellaneous/2502.17387v1.pdf",
     "09_Miscellaneous/Unconfirmed 799249.crdownload",

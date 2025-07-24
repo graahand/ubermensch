@@ -1,0 +1,4 @@
+# Odyssey plan 
+
+take three sheets of papers, in first paper plan out next 5-years in your life or anything you are planning keeping the current scenario and your situations and realistic expectations in the mind. In second paper what will you do if the plan A can't happen or failed. This plan should be distinctly different from plan A not just minor variation. but it should still align with your interests and values  and finally in third paper write down the plan keeping in mind that the time and money are no object. 
+for each plan you access evaluate following aspects: resources(do you have time, money, skills and contacts needed to execute this plan), how much do you like it? and how confidence are you to pull this off.
