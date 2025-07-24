@@ -131,6 +131,9 @@ code   should be minimalist, free from unnecessary comments line after  line, in
 this is how i intend to run  the python file: python extract.py --file questions.pdf --prompt "extract all the questions from the provided image/pdf file(after pdf pages are converted to image)" 
 simply convert each page in the pdf to an image then submit it llm asking it to convert to markdown preserving tables, lists, headers, symbols and mathematics language etc. then combine all the markdown back into the final document
 
+## evaluation pipeline
+
+**now that the extraction with mineru, preprocessing with 14b-qwen3b and answer generation with qwen3:8b is done, need to add one more aspect which allow checking the answer correctness with a bigger model (32b parameter qwen maybe) and this whole flow needs to be developed into a integrated pipeline, which takes a pdf, extract, preprocess, generate answers and evaluate the correctness of the answer with better/bigger model.**
 
 #### process
 
@@ -197,6 +200,10 @@ comprehensive prompt is created from above reference prompt.
 	  ...
 	]
 
+### models to use for preprocessing
+
+qwen3:14b-instruct, deepseek-math-7b-instruct, 
+
 
 ### chain-of-thought prompting: to "think aloud"
 
@@ -210,7 +217,7 @@ comprehensive prompt is created from above reference prompt.
 3. the extracted json file is unstructured and unprocessed content. 
 4. this unstructured and raw data needs preprocessing. the preprocessing will be done using a large language model (automation with a script)
 5. 
->>>>>>> 0f56f8317d882360ec5fa4a9e9d9e43e981c98d8
+
 
 ##### models comparison
 qwen2.5-7b and qwen3-8b as Nepali math question solving model bench-marking the performance difference.
