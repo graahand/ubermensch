@@ -112,6 +112,97 @@ additionally keep remember adding reflective learning with  the model.
 
 ## evaluation dataset collection
 
+**01-ai/Yi-1.5-34B-32K**  model fits within the resources of our pc, which will be used for generating the answers for extracted maths questions from the nepalese curriculum. 
+the generated answers will be set as the correct labels for evaluating the maths-model for benchmarking on the actual real world dataset. 
+
+
+
+*if a gguf model is of size 36gb and the system have 24gb of vram, 64gb or ram how will the ollama will utilizes the resources.*
+
+VRAM will be utilized for accelerating the model inference along with the CPU offloading for required additional memory (RAM).
+
+
+
+a python script that loads visual  langugage model qwen2.5-vl-3b-instruct,  this model should be able to loaded using ollama, 
+(ollama run hf.co/unsloth/Qwen2.5-VL-3B-Instruct-GGUF:Q8_0)
+the pdf file will be passed and every pages needs conversion to image and then extraction from that  image. 
+code   should be minimalist, free from unnecessary comments line after  line, instead comments should explain how the parameters or any part of code is being used internally or in simple way. 
+this is how i intend to run  the python file: python extract.py --file questions.pdf --prompt "extract all the questions from the provided image/pdf file(after pdf pages are converted to image)" 
+simply convert each page in the pdf to an image then submit it llm asking it to convert to markdown preserving tables, lists, headers, symbols and mathematics language etc. then combine all the markdown back into the final document
+
+
+#### process
+
+Base64 is a way of encoding arbitrary binary data (like an image file’s raw bytes) into plain ASCII text, so that it can safely travel through systems that only expect text (for example, JSON payloads or email bodies).
+
+but does the conversion to base64 actually keeps the content from the pdf file intact? does the visual language model like qwen2.5-vl-3b model directly takes the  png file or am i confused regarding this?
+ans: Base64 is reversible and lossless, why do it? (Because JSON (or many HTTP clients) only handle text)
+**Model input** is always numeric tensors—whether you fed them from a local PIL image or the server decoded them for you.
+
+
+############
+[mineru](https://opendatalab.github.io/MinerU/usage/quick_usage/#advanced-usage-via-api-webui-sglang-clientserver) pdf/image to text extractor advance extraction tool based on  paddleOCR accelerated using sglang backend
+, later the extracted text is passed to llm like qwen3:8b to create json format questions sets from this corpus:
+
+ mineru -p class-9-qp.pdf -o output_mineru: this gave absolutely amazing results a json file exactly I wanted. need preprocessing with a llm now to create benchmark questions.
+ 
+
+
+gemini is good at creating such questions answer pairs, kimi is better
+
+AIzaSyD7ogKDnYk_KUnGslnfG4NJ-OAxd-5z2nA
+
+curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent" \
+  -H 'Content-Type: application/json' \
+  -H 'X-goog-api-key: GEMINI_API_KEY' \
+  -X POST \
+  -d '{
+    "contents": [
+      {
+        "parts": [
+          {
+            "text": "Explain how AI works in a few words"
+          }
+        ]
+      }
+    ]
+  }'
+
+check  cosine similarity between the existing json and the preprocessed to identify the changes or differences before/after.
+
+### preprocessing prompt
+
+'''*preprocess the content of the json file (the json file contain the extracted corpus from Nepal's mathematics past question papers). Preprocessing includes structuring the corpus into question_no, [topic_name][class_10] and questions in json format. During extraction of the text, some part of the questions might have not extracted, your  task is also to fill those missing pieces.* '''
+
+comprehensive prompt is created from above reference prompt.
+
+	Preprocessing Instructions
+	
+	The JSON file contains the extracted corpus from Nepal's mathematics past question papers. Your task is to preprocess this unstructured extracted data and structure it into a well-formatted JSON with the following fields for each question:
+	
+	- **question_no**: The question number (e.g., "Question 1", "Q2", etc.).
+	- **topic_name**: The topic the question belongs to (e.g., "Algebra", "Geometry", etc.).
+	- **class_10**: Indicate that the question is for Class 10.
+	- **question**: The full question text. If parts of the question are missing due to extraction errors, fill in the missing pieces based on context.
+	
+	Please output the structured data as a JSON array of objects, for example:
+	[
+	  {
+	    "question_no": "Question 1",
+	    "topic_name": "Algebra",
+	    "class_10": true,
+	    "question": "Solve for x: 2x + 3 = 7."
+	  },
+	  ...
+	]
+
+
+### chain-of-thought prompting: to "think aloud"
+
+**Chain-of-thought prompting** is a technique in AI where instead of asking the model to directly provide the answer, you ask it to generate intermediate reasoning steps that lead to the answer. This mimics human step-by-step problem-solving and helps improve the model’s accuracy, especially for complex tasks like math, logic, or multi-step reasoning.
+
+
+
 
 ##### models comparison
 qwen2.5-7b and qwen3-8b as Nepali math question solving model bench-marking the performance difference.
