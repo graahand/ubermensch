@@ -112,6 +112,7 @@ additionally keep remember adding reflective learning with  the model.
 
 ## evaluation dataset collection
 
+<<<<<<< HEAD
 **01-ai/Yi-1.5-34B-32K**  model fits within the resources of our pc, which will be used for generating the answers for extracted maths questions from the nepalese curriculum. 
 the generated answers will be set as the correct labels for evaluating the maths-model for benchmarking on the actual real world dataset. 
 
@@ -203,6 +204,13 @@ comprehensive prompt is created from above reference prompt.
 
 
 
+=======
+1. extract the questions answers from the past papers
+2. [minerU](https://github.com/opendatalab/MinerU) extracts the data from the pdf file in json format. 
+3. the extracted json file is unstructured and unprocessed content. 
+4. this unstructured and raw data needs preprocessing. the preprocessing will be done using a large language model (automation with a script)
+5. 
+>>>>>>> 0f56f8317d882360ec5fa4a9e9d9e43e981c98d8
 
 ##### models comparison
 qwen2.5-7b and qwen3-8b as Nepali math question solving model bench-marking the performance difference.
