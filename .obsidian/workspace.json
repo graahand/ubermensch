@@ -11,10 +11,14 @@
             "id": "8f0b22545c65ba57",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "04_smarc/project_planning/skin_health_analysis.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "skin_health_analysis"
             }
           }
         ]
@@ -74,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "a42c8c6baa5b2614",
@@ -165,6 +170,11 @@
   },
   "active": "8f0b22545c65ba57",
   "lastOpenFiles": [
+    "04_smarc/project_planning/futuruma.md",
+    "04_smarc/project_planning/skin_health_analysis.md",
+    "10_AI_SCHOOL/robo68_plan.md",
+    "04_smarc/project_planning/pasa_rnd.md",
+    "theme.md",
     "04_smarc/ai-math-ed.md",
     "03_ResearchAssistant/microsoft_hugginface.md",
     "04_smarc/project_planning/05_ai_maths.md",
@@ -172,7 +182,6 @@
     "05_Development&Exp/qwen.md",
     "05_Development&Exp/nlp_nepali.md",
     "04_smarc/transformers.md",
-    "04_smarc/project_planning/futuruma.md",
     "04_smarc/project_planning/image-4.png",
     "04_smarc/project_planning/image-3.png",
     "04_smarc/project_planning/image-2.png",
@@ -193,10 +202,6 @@
     "04_smarc/projects-ideas.md",
     "04_smarc/finetuning_libraries.md",
     "02_LITERATURE-REVIEW/OBJECT-DETECTION.MD",
-    "02_LITERATURE-REVIEW/finetuning_datasets.md",
-    "02_LITERATURE-REVIEW/axolotl.md",
-    "01_SIMPLY-PY/proposal_rudra.md",
-    "01_SIMPLY-PY/lstm.md",
     "[llama-server -hf unsloth",
     "09_Miscellaneous/2502.17387v1.pdf",
     "09_Miscellaneous/Unconfirmed 799249.crdownload",

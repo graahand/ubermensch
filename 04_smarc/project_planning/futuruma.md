@@ -76,3 +76,17 @@ AI-Math is an innovative AI-powered math assistant designed and developed to sol
 Our platform combines cutting-edge artificial intelligence with user-friendly interfaces to provide instant solutions and step-by-step explanations for mathematics problems of all complexity levels.
 
 Whether you're a student struggling with homework, a teacher looking for educational tools, or a professional needing quick calculations, AI-Math is your reliable mathematics companion.
+
+
+#####################################################################
+
+## AI Included Projects for Futuruma 2025
+
+1. AI Math Assistant: Provided 1000 json format mathematic questions directly referenced from curriculum, no further work required (non-urgency)
+2. LED Interactive Game: 
+3. Self Driving Car: Traffic Light and stop-sign detection and new flex (kasto flex banaune?)
+4. Skin Health Analysis: Pre-trained model already available, satyam is working on it
+5. RC Car Treasure Hunt: RC car detects the special objects/treasure and gets the points for every detected treasure. 
+6. Emotion Detection: Needs to add Labuhu avatar. 
+7. Farmbot: Plant leaves disease detection (tomato, potato, khursani)
+
