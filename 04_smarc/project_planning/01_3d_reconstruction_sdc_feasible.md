@@ -86,4 +86,15 @@ now mesh construction is done with algorithms like *(delaunay tetrahedralization
 (neural explicit representation and neural implicit representation)
 
 
+## 8/11 SDC 
+
+monocular depth estimation with single web camera, 
+monocular depth networks like RT-Monodepth and RT-Monodepth-S for real time monocular depth esitmation on embedded systems such as jetson nano. 
+
+
+servo angle between 73-117 degree for turns and 90 degree for straight movements. 
+
+odometry is 
+
+
 

@@ -1,3 +1,4 @@
+#rnd #dream
 
 installed langchain and tavily search
 used the ollama api directly without using the ollama python package. 
@@ -25,8 +26,52 @@ model answers directly, currently using gemma:2b
 | personality test jung personality.                                                                                                                                                                            | 9/9        |
 | pymupdfllm for rag and llms not researched enough and not even tested from reddit post.                                                                                                                       | 9/9        |
 | [marker pdf parser](https://github.com/datalab-to/marker) test this as well for parsing pdf as markdown and json                                                                                              | 9/9        |
+| face_recognition on hold, let's work on jung personality test.                                                                                                                                                | 8/13       |
+| onboarding (persona details and personality test) implemented with functional code                                                                                                                            | 8'13       |
+| now testing with llama3.2:2b model, isn't a thinking model so good.                                                                                                                                           |            |
+| listed out the issues with existing main code files (talk, tts, whisper_streaming_test, onboarding, master_prompt, introduction_user)                                                                         | 13/8       |
+| improvements recorded and listed down from existing code                                                                                                                                                      | 13/8       |
+| tts requires some work bro, streaming tts                                                                                                                                                                     | 13/8       |
+| **900 lines of code review required with comments**                                                                                                                                                           | 15/8       |
+
+
+## improvements in existing code 8/13
+
+* i didn't found the schema mismatch, check it again if any confusion, don't perform any changes here.
+* i don't need the fallbacks for missing files they will be there at any cost. don't need changes here. 
+* handle the duplicate user,
+* user input data types also should have validation
+* database connnection failure doesn't needs error handling but i am concerned about multiple connection variable declared and setup in multiple funciton, i know why it have been done but is that production level? 
+* add cleanup for partial insertions. 
+* age input should be provided in number, integer.
+* working with date is hard i know but add effective and robust parsing the birthdate taken from the user. 
+* memory limit don't do that i don't need that
+* connection timeout and ollama failed issues doesn't needs any fallback keeps them as it is. 
+* for now don't look at tts.py leave it as it is, it needs some work so leave it. 
+* for streaming_whisper_test.py instead of global queues what is better what is alternative, list that out or explain that to me. 
+* talk.py, add the  conversation context management.
+* face_recogntion, leave that, that isn't ready yet
+* cleanup the temporary audio files properly. 
+* instead of loading whisper model at every transcription call, add resource efficient and robust way, first explain that to me. 
+* pool the database connection as well. 
+* solve the memory leakage during the audio streaming. 
+* filepath hardcoding is fine
+* don't add any validation for model availability, it will be there anyhow.
+* solve the issue regarding chat history growing unbounded, i don't need pause resume the conversations. 
+* don't need authentication between sessions. 
+* user's shouldn't be able to go back and change the anaswer its totally intended. 
+* currently i  don't want integration just each units. 
+* add typehints for the functions where required, 
+* data flow should be robust and clear
+* instead of loading llm on every request, what else better can be done, but remember resources utilization and time taken for response are also key factors. 
+* dont cache the model 
+* if the use of global variables is issue, use the better way. 
+* don't load the chat history entirely to the memory, just relevant. 
+* 
+
+
+## Notes
 
 1. monotonic timstamps(increasing timestamps(segments) that never decreases or wrap around)
 2. assert statement in Python is used to check if a condition is true or not. if the  condition is false, the statement will  raise Assertion Error exception, used for debugging. 
-3. Voice activity detection
-4. 
+3. Voice activity detectio

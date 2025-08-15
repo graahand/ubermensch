@@ -1,20 +1,6 @@
-#improvement 
-
-## TODO
-
-1. scanning the documents and make it online. 
-2. ai math assistant system development.
-3. 
-
-
-
-email prashnna k gyawali (https://pkgyawali.com/)
-
-man and his symbols, carl jung (1119)
-[llm parameters testing](https://machinelearningmastery.com/understanding-text-generation-parameters-in-transformers/)
-
-
-
-
-1. [[03_cqis_planning##improvement]] 
-
+1. cuda programming book 
+2. le_robot
+3. sdc maintenance
+4. rudra_md assignments
+5. professors email 
+6. 
