@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9802c242d87d2866",
+        "id": "1f20920a86c56428",
         "type": "tabs",
         "children": [
           {
-            "id": "9ca43e73a747619c",
+            "id": "449a0700a07ac6d6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -168,8 +168,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9ca43e73a747619c",
+  "active": "449a0700a07ac6d6",
   "lastOpenFiles": [
+    "05_Development&Exp/logs_every/sdc_logs.md",
     "05_Development&Exp/logs_every/SON, a robot.md",
     "04_smarc/image.png",
     "04_smarc/finetuning_libraries.md",
@@ -199,7 +200,6 @@
     "09_Miscellaneous/making things happens, ProjectManagement.pdf",
     "09_Miscellaneous/odyssey_plan.md",
     "09_Miscellaneous/pragmatic_programmer_ch4.pdf",
-    "09_Miscellaneous/real_life_glitch.md",
     "05_Development&Exp/cquis.png",
     "05_Development&Exp/22067316_Bibek_Poudel_AML.pdf",
     "09_Miscellaneous/Unconfirmed 907781.crdownload",
