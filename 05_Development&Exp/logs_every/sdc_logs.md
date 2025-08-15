@@ -31,6 +31,23 @@ ubuntu above 20.04
 ros2 above foxy
 opencv above 4.2.0
 
+### build the pangolin first as it is also another dependency for orb-slam3
+
+
+sudo apt install libglew-dev cmake libpython3-dev python3-dev \
+libeigen3-dev ffmpeg libavcodec-dev libavutil-dev libavformat-dev \
+libswscale-dev libdc1394-22-dev libjpeg-dev libpng-dev libtiff-dev libopenexr-dev
+
+
+git clone https://github.com/stevenlovegrove/Pangolin.git
+cd Pangolin
+mkdir build && cd build
+cmake ..
+cmake --build .
+
+
+sudo make install
+
 then 
 ### instructions 
 build orb_slam3, how to?
