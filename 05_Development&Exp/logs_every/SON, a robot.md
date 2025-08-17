@@ -4,6 +4,7 @@ installed langchain and tavily search
 used the ollama api directly without using the ollama python package. 
 model answers directly, currently using gemma:2b
 
+Tr@nsformer#9008
 
 | task                                                                                                                                                                                                          | date       |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
@@ -33,7 +34,41 @@ model answers directly, currently using gemma:2b
 | improvements recorded and listed down from existing code                                                                                                                                                      | 13/8       |
 | tts requires some work bro, streaming tts                                                                                                                                                                     | 13/8       |
 | **900 lines of code review required with comments**                                                                                                                                                           | 15/8       |
-
+## code review and debug
+#### talk
+1. session creation for ollama endpoint
+2. prompt file path and model file 
+3. context keeping with last 10 conversation
+4. consideration for system message and user's message.
+5. clearing conversation history
+6. loading and reading system prompt
+7. conversation with model via ollama
+8. stream is set to true (one word after another)
+9. weather information formatting (preprocessing gibberish)
+10. searching the web using tavily search api. 
+11. making the response speakable 
+12. main function that quit the session with keywords like exit ,quit and q.
+13. searching based on different keywords, instead of knowing the feel or the understanding 
+#### onboarding
+1. database path, named user_profiles.db
+2. imported the chatting and loading system prompt function from talk
+3. creates database connection sqlite3.
+4. checks duplicate users with a sql command
+5. database created with the column name, their datatype for user's information and chat history.
+6. loads introduction_config file for personality check.
+7. save the user's profile, what if it isn't completed?
+8. save the chat messages as chat history, adding user's id, role and content. 
+9. loads recent chat history,this type of code is also placed at talk.py, 20 conversations. 
+10. calculates the personality entf, enjf, intf and so on. 
+11. parsing the birthday correctly from users., taking different date formats.
+12. validates the date range for month, year and day, also considered that feb have only 29 days. 
+13. complete onboarding process for filling out the database with the information taken from user during onboarding
+14. additional logics for full name, nickname and age keepipng rest of the information as it is.
+15. validation for user's nickname and name.
+16. ask for birthday separately if not captured in questions. 
+17. then comes personality assessment. 
+18. added information to the personalized master prompt with collected information about personality and personal. 
+19. nickname at index 2, birthday at 4 and personality type is at 11. 
 
 ## improvements in existing code 8/13
 
