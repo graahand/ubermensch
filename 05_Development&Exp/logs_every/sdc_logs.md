@@ -137,6 +137,14 @@ echo "[SUCCESS] orbslam3 build finished!"
 
 #### now that the robslam mode is ran, we need to integrate the cameras as well for real time slam. 
 how to? 
+first install ros-foxy-usb-cam package for usb web camera, 
+*sudo apt install ros-jazzy-usb-cam*
+or instead of usb_cam, v4l2-camera can be installed as well . 
+
+then test the camera node, with *ros2 run usb_cam usb_cam_node_exe* or ros2 run v4l2_camera v4l2_camera_node,
+
+by default it will publish on /image_raw or /camera/image_raw topic. 
+list out the topics with: ros2 topic list. 
 
 
 what is rosbag? 
