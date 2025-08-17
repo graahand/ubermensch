@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9802c242d87d2866",
+        "id": "1f20920a86c56428",
         "type": "tabs",
         "children": [
           {
-            "id": "9ca43e73a747619c",
+            "id": "449a0700a07ac6d6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -168,11 +168,8 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9ca43e73a747619c",
+  "active": "449a0700a07ac6d6",
   "lastOpenFiles": [
-    "04_smarc/Prospective Ideas /ideated_projects.md",
-    "04_smarc/project_planning/automatic annotation (roboglow).md",
-    "05_Development&Exp/logs_every/pytorch_logs.md",
     "05_Development&Exp/logs_every/SON, a robot.md",
     "05_Development&Exp/logs_every/sdc_logs.md",
     "04_smarc/image.png",
