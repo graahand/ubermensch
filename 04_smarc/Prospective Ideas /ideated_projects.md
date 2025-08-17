@@ -30,4 +30,10 @@ perception-action agent
 8. three main components of voice cloning: text-analysis(generated linguistic features from text), acoustic model (generates acoustic features[mel-spectrograms, pitch, duration, timbre info] from linguistic features[Word boundaries, stress, part-of-speech tags] or text/phonemes input, focusing on prosody and timbre) and vocoder which actually generates audio waveform using acoustic or linguistic features provided).
 9. The **mel scale** is a frequency scale designed to match **human auditory perception**.The mel scale compresses high frequencies and spreads out low ones — more human-like.**mel-spectrogram** = a spectrogram where the frequency axis is warped into the **mel scale**.
 10. Mel Frequency Cepstral Coefficients (MFCC)
-11. 
+11. Wavenet (chatgpt like model to generate raw audio waveforms sample by sample, uses **causal dilated convolutions** to capture long-range dependencies in audio.). later wavenet was repurposed from direct speech generator to vocoder (generating waveform audio from acoustic features(melspectrogram). produces speech that follows the given spectrogram.)
+12. causal means (past and present not future). 
+13. GAN-based vocoders like HiFi-GAN and MelGAN.
+14. **HiFi-GAN and MelGAN** replaced WaveNet vocoder with GANs that generate waveforms in **parallel**: way faster, still natural-sounding.
+15. TN-VQTTS, a novel TTS model that leverages timbre-normalized vector-quantized (TN-VQ) acoustic features for style-timbre disentanglement in speaker adaptation with limited data. This architecture consists of two main components: a txt2vec module that predicts TN-VQ features from input phonemes and a vec2wav module that uses those features, auxiliary prosodic features, and a speaker embedding from a conditioned speaker encoder to generate a speaker-specific waveform.
+	1. *timbre-normalized means removing the speaker's unique voice quality and only extracting the main content, vector-quantized means compressing continuos features into finite set of discrete codes like a dictionary*
+	2. *style-timbre disentanglement means seprating how someone speaks (emotional, fast/slow) and their unique voice quality, auxilary prosodic features means prosody means melody of speech, auxilary prosodic features means extra information like pitch, duration and energy that helps the model sound natural.*
