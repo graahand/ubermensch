@@ -155,6 +155,13 @@ When you feed a rosbag to ORB-SLAM3, it thinks the data is coming from live came
 it means using two cameras (stereo) to get depth information and "IMU" (inertial measurement unit) to measure acceleration and rotation. **fusion of visual and inertial slam** 
 
 
+## stella_vslam_ros with docker  image
+
+
+| cloned stella-vslam-ros repository                                                                                                                       | t   |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
+| tried to build the docker file (humble-ros based)                                                                                                        |     |
+| build failed due to stack trace library (backward-cpp), which was later solved by editing the docker file and adding the build commands for backward-cpp |     |
 
 # slam
 
