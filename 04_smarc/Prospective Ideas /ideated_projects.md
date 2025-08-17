@@ -37,3 +37,20 @@ perception-action agent
 15. TN-VQTTS, a novel TTS model that leverages timbre-normalized vector-quantized (TN-VQ) acoustic features for style-timbre disentanglement in speaker adaptation with limited data. This architecture consists of two main components: a txt2vec module that predicts TN-VQ features from input phonemes and a vec2wav module that uses those features, auxiliary prosodic features, and a speaker embedding from a conditioned speaker encoder to generate a speaker-specific waveform.
 	1. *timbre-normalized means removing the speaker's unique voice quality and only extracting the main content, vector-quantized means compressing continuos features into finite set of discrete codes like a dictionary*
 	2. *style-timbre disentanglement means seprating how someone speaks (emotional, fast/slow) and their unique voice quality, auxilary prosodic features means prosody means melody of speech, auxilary prosodic features means extra information like pitch, duration and energy that helps the model sound natural.*
+	3. primary prosodic featueres are (pitch, duration and loudness)
+		1. auxilary (supplemenatry) prosodic features 
+			* formants, speaking rate, pause patterns, voice quality features (breathiness, creakiness and tension) and prosodic phrasing. 
+
+	## speech fundamentals
+	sound is just a air vibrating. ears catch those wiggles and brain says "oh that's a sound". frequency means how fast the air wiggles, where slow wiggles means deep sound (bass), fast wiggles means high sound (whistle, kid voice). when we talk out lungs push air and our vocal cords vibrate. based on those vibration our mouth, tongue, teeth and lips creates different sounds. this shaping of the vibration by (mttl) changes the spectrum of frequency. pitch means how high or low a voice sounds. loudness means how big or small vibrations (bigger vibration cause very loud shout). timbre is the unique particle that makes the sound unique from one another. prosody means expression while speaking (not being robotic). spetrogram means picture of how sound is being transmitted or spoken out. 
+
+| auto-regressive tts models | non-autoregressive tts model            |
+| -------------------------- | --------------------------------------- |
+| tacotron (google)          | fastspeech and fastspeech 2 (microsoft) |
+| tacotron 2 (google)        | flow-tts                                |
+| deepvoice 2/3 (baidu)      | glow-tts                                |
+| transformertts             | VITS                                    |
+|                            | styletts and styletts2 (recent sota)    |
+
+
+	

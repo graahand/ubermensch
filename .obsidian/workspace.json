@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1f20920a86c56428",
+        "id": "dda6c31240838ca7",
         "type": "tabs",
         "children": [
           {
-            "id": "449a0700a07ac6d6",
+            "id": "2387a6f65e490989",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -168,8 +168,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "449a0700a07ac6d6",
+  "active": "2387a6f65e490989",
   "lastOpenFiles": [
+    "09_Miscellaneous/pragmatic_programmer_ch4.pdf",
+    "09_Miscellaneous/VOICE CLONING SURVEY PAPER.pdf",
+    "04_smarc/Prospective Ideas /ideated_projects.md",
+    "09_Miscellaneous/Unconfirmed 430768.crdownload",
     "05_Development&Exp/logs_every/SON, a robot.md",
     "05_Development&Exp/logs_every/sdc_logs.md",
     "04_smarc/image.png",
@@ -196,7 +200,6 @@
     "05_Development&Exp/qwen.md",
     "09_Miscellaneous/LLMs in Production (2023).pdf",
     "09_Miscellaneous/making things happens, ProjectManagement.pdf",
-    "09_Miscellaneous/pragmatic_programmer_ch4.pdf",
     "05_Development&Exp/cquis.png",
     "05_Development&Exp/22067316_Bibek_Poudel_AML.pdf",
     "09_Miscellaneous/Unconfirmed 907781.crdownload",
@@ -204,7 +207,6 @@
     "09_Miscellaneous/2502.17387v1.pdf",
     "09_Miscellaneous/Unconfirmed 96089.crdownload",
     "09_Miscellaneous/Unconfirmed 234008.crdownload",
-    "09_Miscellaneous/rhlf-131.pdf",
     "04_smarc/project_planning/image-4.png",
     "04_smarc/project_planning/image-3.png",
     "04_smarc/project_planning/image-2.png",
