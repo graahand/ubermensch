@@ -1,18 +1,7 @@
-1. learnable machine (AI tool for education, teaching k-12 AI and computer science like code.org)
+#smarc #rnd #production
 
-
-chatbot for bank's websites 
-
-
-| siddhartha bank      | beesender | doesn't respond to message as well.                                                       |
-| -------------------- | --------- | ----------------------------------------------------------------------------------------- |
-| cgelectronics.com.np | palmmind  | works pretty well, list out the products as well, doesn't respond in nepali or romanized. |
-| sanima bank          | palmmind  | respond to nepali or roman, answers queries correctly, speaks in english.                 |
-| cimex nepal (byd)    |           | doesn't have any chatbot feature                                                          |
-| hyundai              | palmmind  |                                                                                           |
-
-perception-action agent
 ### tts
+#### 17 august
 
 1. flow based generative models: think of flow models as pipes that can push water forward or backward- you can transform noise into voice and back gain smoothly (invertible)
 2. codec-based networks: Codec models are like **neural MP3s** — they first shrink audio into a compact codebook, then treat speech as a sequence of “audio tokens” that can be modeled like words.
@@ -43,6 +32,32 @@ perception-action agent
 
 	## speech fundamentals
 	sound is just a air vibrating. ears catch those wiggles and brain says "oh that's a sound". frequency means how fast the air wiggles, where slow wiggles means deep sound (bass), fast wiggles means high sound (whistle, kid voice). when we talk out lungs push air and our vocal cords vibrate. based on those vibration our mouth, tongue, teeth and lips creates different sounds. this shaping of the vibration by (mttl) changes the spectrum of frequency. pitch means how high or low a voice sounds. loudness means how big or small vibrations (bigger vibration cause very loud shout). timbre is the unique particle that makes the sound unique from one another. prosody means expression while speaking (not being robotic). spetrogram means picture of how sound is being transmitted or spoken out. 
+
+### 18-august
+1. nepali audio/speech data with sentence-aligned nepali text. 
+2. grapheme to phoneme rules (G2P) [**G2P rules** are the **mapping rules** that tell a TTS system how to convert written text (letters/characters) into the correct sequence of sounds (pronunciation).]
+3. phoneme inventory of Nepali language: how nepali letters are pronounced: A **phoneme inventory** is simply the **complete list of distinct speech sounds (phonemes)** in a language — both vowels and consonants — that make meaningful differences between words.
+
+	1. |Grapheme (देवनागरी)|IPA Phoneme|Example Word (Nepali)|Pronunciation|
+		|---|---|---|---|
+		|अ| /ʌ/ or /ə/|अगाडि ("front")|a-gaa-di|
+		|आ / ा|  /aː/|आज ("today")|aa-ja|
+4. **Nepali text corpus** for training pronunciation, phoneme distribution, and prosody.
+5. mel-spectrogram to convert nepali audio into features. 
+6. align text with audio (force alignment).
+7. model (auto-regressive like tacotron2, non-ar (VITS, fastspeech2) and end-to-end VITS AND xtts) along with acoustic model and vocoder. 
+8. MOS (Mean Opinion Score), MCD (Mel Cepstral Distortion) are some evaluation scores. 
+9. Phoneme-Level Tokenizer for nepali language, but minimumly grapheme level tokenizers works. 
+10. phoneme labels aren't required while training the end to end model. like tacotron and tacotron2, xtts, VITS, and glow-tts. fastspeech 2 as well. 
+11. https://blog.bajratechnologies.com/lekhandas-speech-to-text-for-nepali-speakers-85a3d855704d (stt nepali)
+12. https://blog.bajratechnologies.com/how-bajra-trains-developers-on-real-codebases-the-relay-project-model-efe54b996597 
+13. conditional variational autoencoder with adversarial learning for end-to-end text-to-speech VITS
+14. mpl 2.0 license?
+15. we need seconds-based audio files, its written form, a transcribtion using ASR, number_of_words, file_size, a similarity score between the written form and the transcribed text for developing a dataset to finetune model like glow-tts.
+16. sampling rate should be same for the dataset samples, need to be formatted into LJSpeech convention. 
+17. https://openslr.org/143/ check this out for the dataset.
+18. https://github.com/coqui-ai/TTS/blob/dev/recipes/ljspeech/xtts_v2/train_gpt_xtts.py finetuning xtts-v2 tts model in custom dataset. maybe nepali dataset perhaps. 
+19. 
 
 | auto-regressive tts models | non-autoregressive tts model            |
 | -------------------------- | --------------------------------------- |

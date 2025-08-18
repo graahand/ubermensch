@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04_smarc/Prospective Ideas /ideated_projects.md",
+                "file": "04_smarc/Prospective Ideas /no_name_robot_smarc.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ideated_projects"
+              "title": "no_name_robot_smarc"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "a42c8c6baa5b2614",
@@ -168,18 +167,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2387a6f65e490989",
+  "active": "dc8b7376f1ab3ff1",
   "lastOpenFiles": [
+    "04_smarc/advance_finetuning.md",
+    "04_smarc/Prospective Ideas /no_name_robot_smarc.md",
+    "04_smarc/project_planning/cqis typeface detection.md",
+    "04_smarc/project_planning/no name.md",
+    "Record (online-voice-recorder.com) (1).mp3",
+    "Unconfirmed 595470.crdownload",
     "09_Miscellaneous/pragmatic_programmer_ch4.pdf",
     "09_Miscellaneous/VOICE CLONING SURVEY PAPER.pdf",
-    "04_smarc/Prospective Ideas /ideated_projects.md",
     "09_Miscellaneous/Unconfirmed 430768.crdownload",
     "05_Development&Exp/logs_every/SON, a robot.md",
     "05_Development&Exp/logs_every/sdc_logs.md",
     "04_smarc/image.png",
     "04_smarc/finetuning_libraries.md",
     "04_smarc/ai-math-ed.md",
-    "04_smarc/advance_finetuning.md",
     "04_smarc/project_planning/futuruma.md",
     "04_smarc/30th car race.md",
     "04_smarc/project_planning/ RC Car Treasure Hunt.md",
@@ -204,9 +207,6 @@
     "05_Development&Exp/22067316_Bibek_Poudel_AML.pdf",
     "09_Miscellaneous/Unconfirmed 907781.crdownload",
     "09_Miscellaneous/cudabook.pdf",
-    "09_Miscellaneous/2502.17387v1.pdf",
-    "09_Miscellaneous/Unconfirmed 96089.crdownload",
-    "09_Miscellaneous/Unconfirmed 234008.crdownload",
     "04_smarc/project_planning/image-4.png",
     "04_smarc/project_planning/image-3.png",
     "04_smarc/project_planning/image-2.png",
