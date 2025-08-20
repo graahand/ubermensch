@@ -16,7 +16,7 @@
 	- Same sentence, different prosody → different meaning/emotion.
 
 7. timbre is that unique quality in the voice or sound of anything that can produce a sound, like piano and violin with exact same notes sounds different, two people speaking same words sounds different. timbre is what makes the voices unique. 
-8. three main components of voice cloning: text-analysis(generated linguistic features from text), acoustic model (generates acoustic features[mel-spectrograms, pitch, duration, timbre info] from linguistic features[Word boundaries, stress, part-of-speech tags] or text/phonemes input, focusing on prosody and timbre) and vocoder which actually generates audio waveform using acoustic or linguistic features provided).
+8. **three main components of voice cloning: text-analysis(generated linguistic features from text), acoustic model (generates acoustic features[mel-spectrograms, pitch, duration, timbre info] from linguistic features[Word boundaries, stress, part-of-speech tags] or text/phonemes input, focusing on prosody and timbre) and vocoder which actually generates audio waveform using acoustic or linguistic features provided).**
 9. The **mel scale** is a frequency scale designed to match **human auditory perception**.The mel scale compresses high frequencies and spreads out low ones — more human-like.**mel-spectrogram** = a spectrogram where the frequency axis is warped into the **mel scale**.
 10. Mel Frequency Cepstral Coefficients (MFCC)
 11. Wavenet (chatgpt like model to generate raw audio waveforms sample by sample, uses **causal dilated convolutions** to capture long-range dependencies in audio.). later wavenet was repurposed from direct speech generator to vocoder (generating waveform audio from acoustic features(melspectrogram). produces speech that follows the given spectrogram.)
@@ -57,7 +57,8 @@
 16. sampling rate should be same for the dataset samples, need to be formatted into LJSpeech convention. 
 17. https://openslr.org/143/ check this out for the dataset.
 18. https://github.com/coqui-ai/TTS/blob/dev/recipes/ljspeech/xtts_v2/train_gpt_xtts.py finetuning xtts-v2 tts model in custom dataset. maybe nepali dataset perhaps. 
-19. 
+19. xtts-v2 being end to end model, it can easily adapt to nepali language even though it is not pretrained for nepali language. 
+20. 
 
 | auto-regressive tts models | non-autoregressive tts model            |
 | -------------------------- | --------------------------------------- |
@@ -68,4 +69,5 @@
 |                            | styletts and styletts2 (recent sota)    |
 
 
-	
+1. model supporting nepali tokens: qwen2-0.5b-instruct.
+2. 
