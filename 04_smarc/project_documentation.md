@@ -14,3 +14,25 @@
 9. seat occupancy (code, documentation, logs, future works, project reflection and key considerations)
 10. cqis backend (initial phase codebase and documentation if any)
 11. ing-bot (code, documentation, logs, future works, project reflection and key considerations)
+
+
+## project status 
+
+
+| project        | status                                                                                                                 |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| ai-safari      | qr code generation, animation, (localhost and with internet connection both works) (latest version, deployment in any) |
+| seat-occupany  | need amiks for setting up and testing                                                                                  |
+| kick and crush | human skeleton, fruits and bomb, bomb lai fodey time ghatxa, theme sound, subin dai is also involved.                  |
+| ing-bot        | checkmark                                                                                                              |
+| riddle-trek    |                                                                                                                        |
+
+
+https://github.com/Skill-Museum/-ING-Bot
+https://github.com/Skill-Museum/AI-Safari
+https://github.com/Skill-Museum/kick-andcrush
+https://github.com/Skill-Museum/Self-Driving-Car
+https://github.com/Skill-Museum/emotion-detection
+https://github.com/Skill-Museum/seat-occupancy-ai-model
+https://github.com/Skill-Museum/RiddleTrek-WebApplication
+https://github.com/Skill-Museum/DoodleAI

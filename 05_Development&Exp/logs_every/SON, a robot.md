@@ -110,3 +110,27 @@ Tr@nsformer#9008
 1. monotonic timstamps(increasing timestamps(segments) that never decreases or wrap around)
 2. assert statement in Python is used to check if a condition is true or not. if the  condition is false, the statement will  raise Assertion Error exception, used for debugging. 
 3. Voice activity detectio
+
+## cpp inference
+
+AVX/AVX-512: advanced vector extensions, set of cpu instructions which allow CPU to perform SIMD (single intruction, multiple data) operations (Think of it like carrying **8 buckets of water in one go** instead of carrying them one by one.)
+
+avx-512 extended version of avx which uses 512-bit registers so it can process double amount of data compared to avx. consumers chips of intel doesn't support avx-512 but server-chips support that. 
+
+arm neon is a ARM's version of SIMD but for arm devices like smartphones, raspberry pi and jetson M-series. 
+
+ggml is a c library for fast inference of AI models on CPU without any frameworks like pytorch or tensorflow 
+
+### executorch 
+#### simd
+- CPUs have **vector registers** (wide slots that can hold multiple numbers).
+- For example:
+    - Normal register → holds **1 number** (say, 32-bit float).
+    - SIMD register (128-bit NEON, 256-bit AVX, 512-bit AVX-512) → can hold **4, 8, or 16 numbers** at once.
+#### nvidia variant of simd is simt for GPUs.
+It’s kind of like SIMD, but instead of just “one wide register,” you have **many lightweight threads all running in lockstep (means **all units move together at the same pace, doing the same instruction at the same time**.)** .
+- A **core (student)** works on **threads (homework problems)**.
+- To solve each problem, the student uses their **registers (notebook)** to write calculations.
+- If the notebook fills up, they have to run to the **library (RAM)**, which takes more time.
+
+**register** is a very small, ultra-fast piece of storage **inside a core**
