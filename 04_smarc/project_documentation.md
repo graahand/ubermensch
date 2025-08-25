@@ -14,3 +14,35 @@
 9. seat occupancy (code, documentation, logs, future works, project reflection and key considerations)
 10. cqis backend (initial phase codebase and documentation if any)
 11. ing-bot (code, documentation, logs, future works, project reflection and key considerations)
+
+
+doodle ai (only contributions included, include project description, project progress status)
+Riddle trek (no documentation only contributions are included, )
+Emotion Detection (documentation)
+Kick and Crush ( documentation)
+AI-Safari (documentation)
+SDC (no documentation only contributions)
+seat occupancy (documentation)
+ING bot (documentation)
+
+
+1. ai-safari (complete project)
+2. doodle-ai (only basic testing and ideation)
+3. ing-bot (AI and Gradio integration)
+4. seat-occupancy (AI part satyam, Gradio UI (amiks))
+5. kick and crush (AI part, web part partially done by taushif dai)
+6. sdc (canny edge detection[raspberry pi], teachable machines classification model, cruise control for segmentation approach)
+7. emotion detection (initial AI integration with full backend, later improved by radhika neupane)
+8. ai-riddle trek (only ideation  and guidance, all of the remaining task done by sanskar)
+9. Image augmentation (upto second experimentation)
+10. Cqis backend (intial version before the deployment)
+
+
+https://github.com/Skill-Museum/-ING-Bot
+https://github.com/Skill-Museum/AI-Safari
+https://github.com/Skill-Museum/kick-andcrush
+https://github.com/Skill-Museum/Self-Driving-Car
+https://github.com/Skill-Museum/emotion-detection
+https://github.com/Skill-Museum/seat-occupancy-ai-model
+https://github.com/Skill-Museum/RiddleTrek-WebApplication
+https://github.com/Skill-Museum/DoodleAI
