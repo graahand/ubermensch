@@ -16,6 +16,7 @@
 11. ing-bot (code, documentation, logs, future works, project reflection and key considerations)
 
 
+<<<<<<< HEAD
 doodle ai (only contributions included, include project description, project progress status)
 Riddle trek (no documentation only contributions are included, )
 Emotion Detection (documentation)
@@ -36,6 +37,18 @@ ING bot (documentation)
 8. ai-riddle trek (only ideation  and guidance, all of the remaining task done by sanskar)
 9. Image augmentation (upto second experimentation)
 10. Cqis backend (intial version before the deployment)
+=======
+## project status 
+
+
+| project        | status                                                                                                                 |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| ai-safari      | qr code generation, animation, (localhost and with internet connection both works) (latest version, deployment in any) |
+| seat-occupany  | need amiks for setting up and testing                                                                                  |
+| kick and crush | human skeleton, fruits and bomb, bomb lai fodey time ghatxa, theme sound, subin dai is also involved.                  |
+| ing-bot        | checkmark                                                                                                              |
+| riddle-trek    |                                                                                                                        |
+>>>>>>> a47bc7f38fbdb47b02ef53ce6d58b5f897d3310c
 
 
 https://github.com/Skill-Museum/-ING-Bot

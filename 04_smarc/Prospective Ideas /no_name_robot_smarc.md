@@ -70,4 +70,37 @@
 
 
 1. model supporting nepali tokens: qwen2-0.5b-instruct.
-2. 
+
+## Integration
+
+1. we have voice cloned english text to speech functionality ready. 
+2. we have speech to text with whisper cpp ready
+3. we have rag based project description providing llm ready. 
+4. now integration of all of these required, and then rigourous testing
+5. then we show what we have built, and then we works on suggestions, proposal and planning if required otherwise move to different project. 
+
+## 25-august
+## vits
+
+1. eutai sabda/word multiple way ma bolna sakinxa jasle garda yo natural variation lai modelling garna(means frame garna problem ko around) garo hunxa.
+2. conditional autoencoder framework use garerw waveform(aawaj) lai reconstruct garinxa back and forth( encoder and decoder). Tarw tyo waveform consist garne latent space ma manxe ko aawaj kattiko majjale represent vako xah vanne kura le speech ko quality lai farak parxa. 
+3. so here comes variational inference augmented with normalizing flows, josle simple gaussian distribution ma vako waveforms haru lai transform garxa complex ani flexible and representative waveforms ma jun invertible(change that can be flipped back to original form) ani learnable hunxa. This results in better speech synthesis kinavane data modelling ko issue eha address hunxa. 
+4. ani vits (conditional variational autoencoder with adversarial learning for end-toend text-to-speech) chai end to end model ho instead of other two stages models josle pahila waveform batw mel spectrogram generate garxa ani tesbatw later audio. 
+5. speech generation garda phoneme(smallest unit of sound) kati time samma bolne vanerw decide garna ko lagi duration predictor use hunxa. (autoregressive models haru ma yo kura deterministic hunxa but vits am chai yo stochastic xa josle garda natural sounding variations sunxa instead of robotics)
+
+## vits adaptation to nepali language
+
+1. pahila suru ma already vako dataset (audio:text) lai preprocess garnu parxa which includes normalization of the text (jastai dr. lai doctor, 1918 lai ninteen eighteen) ani punctuations haru handle garnu paryo (like |, ?).
+2. tespaxi normalization gareko dataset lai phonemization garnu parxa meaning g2p conversion, written nepali words lai phonetic representation ma convert garnu parxa based on IPA (international phonetic alphabet). yo conversion garna ko lagi nepali phoneme set (speech sounds) chainxa, g2p ruleset. dataset ma garnu parne kaam etti ho tespaxi preprocessing sakinxa.
+3. vits le mel-spectrograms use garxa reconstruction loss calculate garna ko lagi VAE le, mel-spectrogram extract garna ko lagi STFT (short time fourier transform) use garinxa ani tesma paxi mel-fliterbank apply garxa (mel-filterbank le manxe le sunne range ma sound lai compress gardinxa 80 bands ma)
+4. additionally vits le liinear -scale spectrogram pani use garxa kl-divergence loss ani posterior encoder input ko lagi, yo pani stft batw garna milxa without mel-filterbank
+5. kl-divergence loss vaneko esto loss ho josle measure garxa how one probability distribution differs from a second. kl-divergence loss calculate garna ko lagi linear-scale spectrogram use garxa kina vane yo vaneko ground truth frequence representation ho jaba ki mel-spectrogram ma human auditory frequence ma compress gareko hunxa speech lai. 
+6. tts system ma challenge vaneko text rw audio  ko alignment ho, jun alignment traditional tts systems ma attention mechanism use garerw garinthyo vane VITS ma chai yo monotonic alignment search use gareko xa jun hard alignment ho matlab yesle kati exactly how much time for which phonemes vanerw vandinxa. 
+7. evidence lower bound is surrogate object of VAE (made up of reconstruction loss and kl-divergence loss)
+8. vits ko final component vaneko decoder ho jun chai basically HiFi-GAN ma based hunxa, yo hifigan chai neural vocoder ho jasko matlab yesle melspectrogram batw audio waveform produce/generate garxa 
+9. cnn le or convolution le spatial dimension reduce garxa with the help of kernels sliding over the data. phoneme patterns extract garna ko lagi 1d convolution use garinxa speech ma pani.  tarw VITS ma chai deconvolution use hunxa joslai transposed convolutions pani vaninxa. yesle chai convolutions ko thyakkai ulto spatial dimension increase garxa (upsample). it reverses the dimensionality reduction 
+10. Also multi receptive field module (mrf) pani use vako xa vits ma josle finegrained details (Phoneme-level) ani broader details (like prosody, flow, stops/intonation) capture garxa which is essential in speech synthesis.
+11. vits model ko architecture chai posterior encoder(non-causal wavenet), prior encoder (transformer encoder), decoder (hifi-gan), discriminator (discriminator from HiFi GAN) and stochastic duration predictor.  
+12. discriminator is a critic, classify garxa generator le generate gareko speech/image real recording ho ki synthetic, this is how vae learns. VITS ma multi-period discriminator use vako xah jasko matlab euta matrai critic hudena ki multiple critics hunxa. voice speech is quasi periodic (approaximately periodic) periodic vaneko continuos cycle like mobile beep, tarw manxe boleko chai periodic hudena. VITS ma multi critics rakhnu ko  
+13. transliterate vaneko: “नेपाल” → **Nepal**, “Computer” → **कम्प्युटर**  ani translate vaneko chai: “पानी” → “water”.
+14. 
