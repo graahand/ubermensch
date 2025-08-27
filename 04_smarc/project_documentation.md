@@ -16,6 +16,28 @@
 11. ing-bot (code, documentation, logs, future works, project reflection and key considerations)
 
 
+<<<<<<< HEAD
+doodle ai (only contributions included, include project description, project progress status)
+Riddle trek (no documentation only contributions are included, )
+Emotion Detection (documentation)
+Kick and Crush ( documentation)
+AI-Safari (documentation)
+SDC (no documentation only contributions)
+seat occupancy (documentation)
+ING bot (documentation)
+
+
+1. ai-safari (complete project)
+2. doodle-ai (only basic testing and ideation)
+3. ing-bot (AI and Gradio integration)
+4. seat-occupancy (AI part satyam, Gradio UI (amiks))
+5. kick and crush (AI part, web part partially done by taushif dai)
+6. sdc (canny edge detection[raspberry pi], teachable machines classification model, cruise control for segmentation approach)
+7. emotion detection (initial AI integration with full backend, later improved by radhika neupane)
+8. ai-riddle trek (only ideation  and guidance, all of the remaining task done by sanskar)
+9. Image augmentation (upto second experimentation)
+10. Cqis backend (intial version before the deployment)
+=======
 ## project status 
 
 
@@ -26,6 +48,7 @@
 | kick and crush | human skeleton, fruits and bomb, bomb lai fodey time ghatxa, theme sound, subin dai is also involved.                  |
 | ing-bot        | checkmark                                                                                                              |
 | riddle-trek    |                                                                                                                        |
+>>>>>>> a47bc7f38fbdb47b02ef53ce6d58b5f897d3310c
 
 
 https://github.com/Skill-Museum/-ING-Bot
