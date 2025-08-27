@@ -14,4 +14,5 @@ GPUs are made up of SMs (streaming microprocessors), each SMs contains SPs (stre
 
 GPU also have their global memory with very high bandwidth as compared to CPU's RAM. 
 
+tr@nsformer#9005
 

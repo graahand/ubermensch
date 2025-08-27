@@ -8,3 +8,13 @@
 bibek.poudel@ingskill.edu.np: tr@nsformer#90001
 github: tr@nsformer*9001
 
+
+People laughed at me. Said I’d never achieve anything. But I had dreams:  
+🏠Buy my mom a house  
+🌍 Travel the world  
+💻 Own the best computers
+
+
+contorl robot with llm (navigation): https://mikelikesrobots.github.io/blog/llm-robot-control/
+
+
