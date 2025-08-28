@@ -142,9 +142,8 @@ It’s kind of like SIMD, but instead of just “one wide register,” you have 
 1. essential build packages
    `sudo apt-get update && sudo apt-get install -y build-essential cmake libasound2-dev libcurl4-openssl-dev pkg-config`
 	`sudo apt-get install -y libcurl4-openssl-dev pkg-config libasound2-dev`
-	
 
-
+2. cpp ma header vfile vaneko table of contents or blueprint jasto file ho jaha different  functions haru name ani parameters haru mentioned hunxa, class definitions haru  ni included hunxa ani yo file lai chai .cpp file le call garxa for actual implementation. 
 
 ### cmake learn
 
@@ -160,4 +159,3 @@ It’s kind of like SIMD, but instead of just “one wide register,” you have 
 	pthread
 	asound `
 	yo line le chai sabai external libraries haru include garxa use garan ko lagi, libcurl chai httprequest ko lagi, pthread multithreading ko lagi ani asound chai ALSA audio Linux ma. yesko thauma aru libraries haru ni huna sakyo jun chainxa like *whisper.cpp*.
-	
