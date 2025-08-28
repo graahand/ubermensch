@@ -15,7 +15,7 @@ Nietzshche, **over-intellectualization** or **decadence**
 4. only philosophy is plato, its in our DNA, every philosophy after plato is commentary on plato.
 5. Oedipus Complex (son loves his mother and rival his father, subconciously (its psychological and unconscious, not literal))
 6. Electra Complex (vice versa to oedipus complex)
-7. 
+7. Metaphysics is like asking **“what is everything really made of, and why does it exist at all?**
 
 
 

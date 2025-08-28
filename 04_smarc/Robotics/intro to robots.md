@@ -17,11 +17,10 @@
 ### 9
 
 Criteria
-1. Project should not use linux-based development boards like Raspberry Pi and Jetson Products
-2. Projects should integrate python devleopment boards development board with its camera extension as part of Python integration for computer vision applications.
-3. Modular robotics components (motors, sensors, building blocks)
-4. Wireless connectivity (Wi-Fi /Bluetooth) for data transmission.
-5. Programming language are strictly Python and Arduino programming
+1. Project should not use linux-based development boards like Raspberry Pi and Jetson Products.
+2. Projects should integrate python devleopment boards for AI integration.
+3. Programming language are strictly Python and Arduino programming.
+4. 
 
 
 Project list
@@ -39,3 +38,7 @@ Project list
 
 4:motor/battery/switch (mechanical) (parents, stakeholders, studentss point of view, who you are trying to teach, why you are teaching, no murga,  professionals (difference thin line between  the course taken and not taken students))
 5: 
+
+
+
+[Kendryte k21](https://maixduino.sipeed.com/en/hardware/k210.html) AI vision and hearing development board.
