@@ -135,6 +135,8 @@ Mixed Precision Training is a technique for enhancing pre-training efficiency of
 NVIDIA's latest hopper architecture supports 8-bit-floating (FP8) precision enabling greater computational efficiency for large-scale language models. 
 ### Hessian Metrics
 The **Hessian** is a matrix that tells you how a function bends. While the gradient tells you the direction of steepest ascent or descent, the Hessian tells you how the steepness itself changes. In machine learning, especially deep learning, it helps us understand how our loss function behaves around minima and how our model might generalize. 
+
+
 ### Monolithic Multi-Modal Model
 Monolithic multimodal models are single, unified neural networks trained to process and integrate multiple data types (e.g., text, image, audio) within one architecture. Unlike modular systems that use separate models for each modality, monolithic models share parameters and jointly learn cross-modal representations, enabling richer understanding and generation across modalities with end-to-end training and shared context.
 ### Gradient Clipping
