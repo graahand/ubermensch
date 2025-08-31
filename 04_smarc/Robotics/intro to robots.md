@@ -40,5 +40,87 @@ Project list
 5: 
 
 
+apil.ghimire@ingskill.edu.np
+1234Bishal1234
 
 [Kendryte k21](https://maixduino.sipeed.com/en/hardware/k210.html) AI vision and hearing development board.
+
+
+
+5Es: Engage, explore, explain, elaborate, evaluate
+### teaching plan for class 9 robotics
+
+1. students already have the background of Python programming, but the basic Python won't be sufficient for the kind of project planned for class 9. 
+2. Computer Vision should be teached from ground up along with a basic implementation.
+3. What is image, composition of the image, color channels in image (black and white, RGB) dealing with images with Python(OpenCV).
+4. Object recognition, how the AI learns the patterns and able to recognize objects and faces, how? (learning kit allow training the recognition model in real time by capturing the samples with the embedded ESP32 camera itself)
+5. How color detection works and how its different from using IR sensors? with OpenCV.
+6. Students also required to learn and apply the qrcode/barcode specific python library like *pyzbar*. 
+7. Not only qrcode and barcode, fiducial markers like AprilTags are very essential for robotics applications (apriltag/fiducial markers are like a qrcode for robots that contains specific instructions according to which the robots perform task as simple as led blinking to moving different actuators)
+8. synergy between Python/AI and robotics, merely arduino programming and robots aren't sufficient for dealing with the real world problems and scenarios due to which Python integration is must, 
+9. Our learning kit uses the development board slightly different from esp32 which  is Kendryte k210 which have builtin support for AI vision tasks from object recognition, face recognition, apriltag detection and color detection, such vision features are implemented via Python programming specifically known as MaixPy along with IDE support for this micropython implementation.
+
+#### lessons
+1. image and its composition (fundamentals)
+2. dealing with the images (image processing, image operations (cropping, grayscale, rotating, resolution))
+3. human vision and computer vision
+4. why AI vision required, synergy (robotics and AI)
+5. real world applications (robotics and AI)
+6. Python and its derivatives (Micropython, MaixPy)
+7. vision and sensors (when to use which or difference between them)
+8. recognizing objects (is it memorizing or finding patterns)
+9. teachable machines
+10. apriltags (qr code with instructions sets for robots)
+11. sensor fusion (sensors and AI vision)
+
+## lessons 
+1. image
+2. image composed of (pixels, channels, color values)
+3. color spaces in images (RGB, HSV, BINARY)
+4. human vision and robot's vision (humans see continuously with **perception** (eye); robots see **discretely** via sensors/cameras and algorithms.)
+5. working with the images (image processing, filtering, resizing, detecting edges, extracting features.)
+6. ***python programming (syntax, data types, loops, )*** 
+7. running python code via shell(REPL)
+8. code editor for python (IDEs/editors like VS Code, Thonny, PyCharm, MU editor)
+9. running python script
+10. development boards supporting python
+11. variants of python (micropython and maix py)
+12. MicroPython and Maix Py 
+13. getting started with MicroPython (flash firmware, connect via serial)
+14. Electronics basics
+15. ESP32 and Kendryte K21 ()
+16. Sensors, motors and actuators
+17. arduino programming and hardware components (blinking led, buzzer and ultrasonic threshold for obstacle)
+18. GPIO (read sensors data and triggering outputs)
+19. PWM (controlling motor speed, servo angles, movement of the robot)
+20. working with sensors data using micropython (learn how to read, filter, and use input from distance, camera, or IMU sensors)
+21. controlling actuators and motors using micropython (practice using GPIO + PWM to drive DC motors, servos, and relays)
+22. fsm and micropython (design clear robot behaviors (Idle–Drive–Avoid, etc.) using state transitions coded in MicroPython.)
+23. communication protocols (i2c, serial, spi)
+24. serial communication 
+25. i2c communication
+26. camera modules and image capture
+27. computer vision algorithms (edge detection, contour detection)
+28. running cv algorithms in ESP/Kendryte
+29. introduction to machine learning
+30. learnable machines (machine learning for computer vision, recognizing new face)
+31. running ml models in microcontrollers and challenges 
+32. testing and debugging
+33. object detection/qrcode detection/apriltag detection/face recognition robot 
+34. documentation
+
+
+knowledge competency and skill
+
+**Class 9: Pro**
+
+
+Knowledge: python programming (micropython), image processing, learnable machines (patterns), qrcodes/barcode/apriltags, synergy of robotics and artificial intelligence
+
+Skills: write python program, working with images (cropping, rotation, color channels), training recognition models, detecting and extracting information from qr codes, applying python logics for actuation (actuators haru move garna or robot ko working mechanism change garna)
+
+Competency: Design and build robots that can perform specified behaviours/variations (person identifying robot, obstacle(object) detection robot, waste classifying robot, color identifying robot, qrcode/barcode decoding robot, robot with robotic arm (performs specific task based on detected april tag))
+
+Tools and Kits:
+
+

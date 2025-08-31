@@ -8,7 +8,6 @@
 
 2. Finding of similar projects done by other authors 
 
-W
 
 
 
