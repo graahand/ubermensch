@@ -11,10 +11,35 @@
 
 
 
+### 2 sep
+flow good xah no gaps in the learning outcomes or the lessons, improvement in the cognitive learning outcomes reviewed, bloom's taxonomy. 
+
+#### 5e ko description: 
+> **"Engage is not an interactive activity—someone else (e.g., the teacher) presents something (like a video), and students just observe. Engage sparks _curiosity and connects to prior knowledge_."**  
+> **"Explore means a hands-on activity where students interact with materials (e.g., a Robotics Mini-Museum), test ideas, and ask _'how/why did this happen?'_ through guided discovery."**  
+> **"Explain means the teacher _and students_ collaboratively clarify concepts (e.g., answering _'How are robots built?'_), moving from exploration to formal understanding."**  
+> **"Elaborate means deepening understanding _by applying concepts to new scenarios_ (e.g., building robots with kits or role-playing a robotics team to solve real-world problems)."**  
+> **"Evaluate means assessing _how much knowledge transfer occurred_ (e.g., through presentations where students justify solutions, showing they can use concepts beyond the lesson)."**
+
+##### class 8 lesson plan based on project
+project: self balancing robot
+1. yo robot banauna ko lagi main chaine components haru vaneko euta MPU6050 gyro-accelerometer chainxa, josle chai self balance garna contribute garxa, esp32 board chai as microcontroller use hune vayo, euta motor driver (L298N) and two dc geared motor chainxa. 
+2. PID ko concept esma use hunxa kinavane yei concept le self balance garna ko lagi help garxa. 
+> 
+#### lessons and framework
+NOW CRAFT THE CONTENT ACCORDING TO THE LESSON THAT WE HAVE PLANNED TILL NOW, I WILL PROVIDE YOU THE LESSON INFORMATION WITH ADDED TOPICS INSIDE THE LESSON, YOU CREATES THE LEARNING OUTCOMES IN 4 ASPECTS, COGNITIVE, TECHNICAL, PROBLEM SOLVING SKILLS AND SOFT SKILLS. 
+
+SAMPLE OF HOW TO WRITE THE LEARNING OUTCOMES IS GIVEN IN THE ATTACHED IMAGE AND BELOW SAMPLE AS WELL: 
+USE BLOOM VERBS FOR COGNITIVE PART. 
+TECHNICAL PART SHOULD BE ALIGNED WITH PSYCHOMOTOR SKILL TAXONOMY
+PROBLEM SOLVING SKILLS PART SHOULD BE ALIGNED WITH 3C Problem-Solving Framework. 
+AND SOFT SKILLS PART SHOULD BE ALIGNED WITH CASEL SOCIAL EMOTIONAL FRAMEWORK. 
+
+****
+SAMPLE LEARNING OUTCOMES THAT IS MADE FOR CLASS 9: IMAGE AND VISION  
 
 
 ## project criteria
-### 9
 
 Criteria
 1. Project should not use linux-based development boards like Raspberry Pi and Jetson Products.
@@ -79,9 +104,9 @@ apil.ghimire@ingskill.edu.np
 3. color spaces in images (RGB, HSV, BINARY)
 4. human vision and robot's vision (humans see continuously with **perception** (eye); robots see **discretely** via sensors/cameras and algorithms.)
 5. working with the images (image processing, filtering, resizing, detecting edges, extracting features.)
-6. ***python programming (syntax, data types, loops, )*** 
+6. ***python programming (syntax, data types, loops, functions )*** 
 7. running python code via shell(REPL)
-8. code editor for python (IDEs/editors like VS Code, Thonny, PyCharm, MU editor)
+8. code editor for python (IDEs/editors like VS Code, MU editor)
 9. running python script
 10. development boards supporting python
 11. variants of python (micropython and maix py)
@@ -90,7 +115,7 @@ apil.ghimire@ingskill.edu.np
 14. Electronics basics
 15. ESP32 and Kendryte K21 ()
 16. Sensors, motors and actuators
-17. arduino programming and hardware components (blinking led, buzzer and ultrasonic threshold for obstacle)
+17. ***arduino programming and hardware components (blinking led, buzzer and ultrasonic threshold for obstacle)***
 18. GPIO (read sensors data and triggering outputs)
 19. PWM (controlling motor speed, servo angles, movement of the robot)
 20. working with sensors data using micropython (learn how to read, filter, and use input from distance, camera, or IMU sensors)

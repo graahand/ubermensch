@@ -1,3 +1,4 @@
+#faiss #rag 
 futuruma projects description as RAG, voice assistant, simple transcribtion and tts with kokoro. a non-thinking LLM (doesn't need finetuning right now), with RAG this is possible easily. 
 
 but limitations of system prompt is not known, how much it allow model to follow and doesn't deviating from its original state. proprieratary models also use system prompt like claude, chatgpt and gemini but their's model doesn't seem to be deviated such a way it get exploited until you really want it to deviate. but they are robotics or fake, we need a real conversation garna sakne model or agent. 

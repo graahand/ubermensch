@@ -159,3 +159,20 @@ It’s kind of like SIMD, but instead of just “one wide register,” you have 
 	pthread
 	asound `
 	yo line le chai sabai external libraries haru include garxa use garan ko lagi, libcurl chai httprequest ko lagi, pthread multithreading ko lagi ani asound chai ALSA audio Linux ma. yesko thauma aru libraries haru ni huna sakyo jun chainxa like *whisper.cpp*.
+
+## 31 august
+1. diarization and vad required for stt.
+2. echo 'export COQUI_TOS_AGREED="1" # XTTS non-commercial license agreement' >> ~/.bashrc for TOS license (coqui tts vocice cloing )
+
+### SEP 2
+```
+if __name__ == "__main__":
+    main()
+```
+this code says to python interpreter doesn't run this file as script whenever it is imported anywhere else, like in main function. 
+
+1. instead of storing with prefixes, normalize both ways. (chunk_teext = user_input)
+2. only add user questions, not that of assistant in the .md file, and also there is a code to save conversation history json file in integrate.py but the simple rag creates .md file, fix this. 
+3. embedding model is too small, use state of art retreival with model such as all-mpnet-base-v2, BAAI/bge-small-en-v1.5.
+4. add context ranking and recency bias as well with relevance scoring. > **Hybrid Search** – Combining semantic similarity with other signals (like time).
+5. it is creating too small chunks, instead use contextual chunking. 
