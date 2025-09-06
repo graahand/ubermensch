@@ -11,12 +11,11 @@ np01ai4a220032@islingtoncollege.edu.np: tr@nsformer.9004
 mysecondteacher: gedakoachar.22
 
 
-People laughed at me. Said I’d never achieve anything. But I had dreams:  
-🏠Buy my mom a house  
-🌍 Travel the world  
-💻 Own the best computers
-
-
 contorl robot with llm (navigation): https://mikelikesrobots.github.io/blog/llm-robot-control/
 
 
+## words and concepts 
+1. contructive theory of learning 
+2. progressive theory of learning
+3. learning process (exploration, term introduction and concept application)
+4. 

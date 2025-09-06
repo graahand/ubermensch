@@ -147,5 +147,55 @@ Skills: write python program, working with images (cropping, rotation, color cha
 Competency: Design and build robots that can perform specified behaviours/variations (person identifying robot, obstacle(object) detection robot, waste classifying robot, color identifying robot, qrcode/barcode decoding robot, robot with robotic arm (performs specific task based on detected april tag))
 
 Tools and Kits:
+##############################################################################
+
+Robot Subsystems
+Engage: **Recognize the parts**: demonstrate a simple line following robot. Introduce the term **subsystems** and pose a guiding question: “How do different parts of a robot work together?”
+Explore:  Students are provided with disassembled line following robot, try to identify and label the parts and guess their function and discuss which parts are responsible for movement of the robot and which parts allow robot to think? 
+Explain: Teacher explains the concepts: a. Explain the function of the robot's components. b. Explain how those components connect and work as a  system.
+Elaborate: Students design a obstacle avoidance robot with different subsystems.
+Evaluate: Quiz on what are subsystems, their roles and how  they connect?
+
+Human  Vs Robots 
+Engage: Show a short video of robots and human doing  same work in coca cola factory. Ask students to differentiate the efficiency between human and robot doing the task.  Introduce the analogy of human's part with robot's. (eyes:sensors, arms:actuators)
+Explore: Students are assigned to match the robot's part with human part based on function from a labelled diagram of human anatomy and robot's anatomy. 
+Explain: Teacher explains: a. Explain difference between biological senses and electronic sensors. b. Explains the energy source for robots and human
+Elaborate: Students solve scenario-based question and propose a solution: (A robot needs to identify the walls around the room, how the robot's eye difers from human's eye in this context)
+Evaluate: Quiz: a. which robot subsystem is similar to human brain? A robot's touch sensor is analogous to which part of human's body? For what kind of tasks robots are best suited for?
+
+Robots vs Machines
+Engage: Display common objects (e.g., toaster, Roomba vacuum, elevator, robotic arm) and ask: “Which of these are robots? Why?” Also pose a guiding questions: What makes a robot more than just a machine?  
+Explore: **Sorting Game**: Images of 10 different objects (mars rover, line following robot, fan, car, bike, knife, sophia robot) are given. Students sort between robot and machine. 
+Explain: Now teacher explains: a. Explain defining features of robots and machines. Explain rule-based intelligence and fixed function. 
+Elaborate: Students plan and design robot by adding one subsystem into the machine. (a toy car to obstacle avoidance car) and justify why is this a robot now? 
+Evaluate: Quiz: a. label the objects in the image as robot or machine with one sentence justification. b. Give one example where machine works better than a robot. 
+
+Robot's Mobility
+Engage: Show three short video clips of (a. wheeled robot navigating, legged robot climbing stairs, drone flying over terrain) and follow up with a question why robot needs different legs for different road?
+Explore: Students test a wheeled robot on sand and tiled surface. discuss why driving robot on tiled surface feels smooth as compared to sand. 
+Explain: Teacher explains: a. why wheels struggle in sand? b. what does the robot's mobility means? c. If robot is climbing stairs, why it can't use wheels alone? 
+Elaborate: Analyse and redesign the mobility for robot. **Scenario**: 'a wheeled robot is stucked in a mud during a flood rescue.'
+Evaluate: Quiz: a. A robot must move quickly on smooth tile floors. Should it use tracks or wheels? Explain. b. Which mobility type is best for climbing stairs? Why?
+
+Robot's Autonomy
+Engage: Show three video clips side by side (a person controlling remote control car, a line following robot autonomously navigation a black tape path, and a actual self driving car moving around the city (tesla car delivers itself to its owner {youtube})) 
+Explore: Use remote controller to control the car around the class and suddenly stop pressing the buttons and observe what happens next? Followed by the discussion on why the robot stopped when the buttons are not pressed, is it possible for a robot to control itself, making decisions?
+Explain: Teacher explains: a. why did the rc robot stopped when the controller is released? b. how did the line follower robot know to turn when it saw the black tape? 
+Elaborate: Design and simulate an autonomous obstacle avoidance car by adding one sensor and writing the If-Then logic based on sensor's readings 
+Evaluate: **Quiz**: a. Write an IF-THEN rule for a robot that stops when it sees a cliff. b. A robot vacuum turns when it bumps into a wall. Is this remote-controlled or autonomous? Why?
+
+Robot's Environment
+Engage:  **Mystery Environment Game**: Show the pictures/videos of robot working in different environments (roomba vaccum robot in home, mars rover in space, underwater robot) 
+Explore: Test a waterproof robot and regular remote controlled robot in a water tank and see which one have the problem with circuits.
+Explain: Teacher explains: a. Why different environments requires different design of the robot? 
+Elaborate: Group of students pick one environment for the robot, identify 2 challenges in that environment, choose tools/sensors for those specific challenges, write if-then rule.
+Evaluate: **Quiz**: a. “A robot in a dark cave needs to avoid rocks. Which sensor should be used? b. :"A hospital robot must find invisible germs." which sensors should be used in this situation? 
+
+Robot's Job
+Engage: 
+Explore:
+Explain:
+Elaborate:
+Evaluate:
 
 
