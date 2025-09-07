@@ -3,3 +3,4 @@
 
 2. vlm ko sabai vanda thulo samasya vaneko yesle visual hallucination garxa, ani llm component batw parametric knowledge use garerw response generate garxa josle garxa kheri hallucination sanga deal garna ko lagi grounding dherai jaruri xah. 
 3. currently llama-3.2-vision vanne model ma dekhiyeko chai k xah vanda vision ani text ko correlation ko lagi llm backbone use gareko painxa which doesn't requires pre-training like that of CLIP. 
+4. 
