@@ -8,7 +8,12 @@
 5. inference efficiency vanekao nai real-world deployment ko main kura ho memory ani speed MLA le majjale optimize garxa. training ma chai yo use hudena kina vane training ma model lai full precision chainxa. 
 6. so olmo2 vanne model ma chai normalization layer ko placement was something unique. initially, original transformer architecture ma (decoder part) post-norm use hunthyo (mha paxi normalization (layernorm) ani feedforward layer paxi normalization), tespaxi pre-norm use huna thalyo in models like llama 3 8b, gpt2 (rmsnorm and layernorm were used respectively) ani finally olmo2 7b model ma chai post-norm inside residual huna thalyo which means original transformer architecture ma post-norm chai residual ko bahira thiyo vane olmo ma chai thyakkai ulto gardiyo jasle garda loss spikes(instability) (mostly seen in pre-norm usage) chai post-norm chai testo thena. 
 7. qknorm pani use vako thiyo olmo2 ma additional normalization ho applied to query and key jasle garda chai 
-   
+8. so, gemma 3 ma chai sliding window attention use vako thiyo instead of regular causal self attention (mha/mla ma). regular causal self attention ma chai current token le afu ani afu vanda agadi ko token matrai attend garna pauxa attention score calculate garna ko lagi whereas sliding window attention ma chai current token le euta fix limit ko tokens matrai attend garna payo like sliding window size of 3 le afu ani duita previous token matrai attend garna payo. yesle garda memory usage ekdam kaam vayo. Gemma 3 ma sliding window attention sanga global attention pani use vako thiyo 5:1 ko ratio ma jasle garda model le  pahila ko kura haru sabbai chai navulos long text ma. ani yesle garda tyo asar pani parena jun ablation studies ma dekhiyo gemma ko. gemma 2 ma chai 1:1 local:global attention use vako thiyo vane tei kura sanga compare garerw 5:1, 7:1 try  garerw herda performance ma kei problem aayena jasle garda gemma 3 ma chai 5:1 ko ratio use gariyo. 
+9. yesko analogy chai k xah vanda, note lekhdai garda harek euta paragraph ko note paxi euta global note(main summary) banaunu, yesari nai sliding window attention rw regular causal attention le combinely gemma 3 ma kaam garxa.  
+10. transformer blocks in llm architecture cannot be parallelized, they are strictly sequential so they are expensive in inference. 
+11. qwen3 ko 28 ota transformers blocks haru xan. its a deeper model.
+12. unlike deepseek v3 671b, qwen3-35b-a22b(moe) model doesn't usage the shared experts but have 8 experts active per token similar to the deepseek v3. this choice is one of the interesting choice which can be seen changing in next iteration of qwen models. 
+13. 
    ![[Pasted image 20250911004503.png]]
 
 
