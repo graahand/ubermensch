@@ -1,3 +1,25 @@
+
+
+# sebastian raskc
+1. grouped-query attention vaneko chai multi-headed attention vanda slightly different xah to reduce the cost, kina vane multi-head attention ma harek harek token ko lagi query, key ani values haru compute garnu parxa whereas grouped query attention ma yei kura queries haru ko group ko key ani values hunxa (share garxa same key and value query heads le) jasle garda compute cost significantly ghatxa, memory cost pani ghatxa.
+2. yesko analogy  chai k xah vanda, MHA vaneko chai gharma sabai ko iphone xa ani sable afno afno charger cable,plug use garxan tarw gqa ma chai if gharma 4 jana xah vane 2 ota charger, plug, cable use garxan jasle garda bijuli ko bill thorai vayo. 
+3. multi-head latent attention chai deepseek r1/v3 ma use vako important concept ho josle chai multi-head attention lai replace garxa original transformer architecture batw. additionally deepseek ko architecture ma 61 ota transformer blocks haru xan. aba aau multi-head latent attention ma, jasari gpt2 ko architecture ma euta query ko respective key ani value hunthyo (let's say 100 dimension ko each) then MLA ma chai key ani value lai compressed form ma rakhinxa (let's say 10 dimension vector) jasle garda memory usage majjale ghatne vayo ani MLA ko yo concept chai training ma vanda pani inference ma implemented hunxa. query ma chai attention mechanism apply hune ho so yeslai chai 100d ko rakhyo ani key rw value vaneko knowledge base ho jasle garda compressed form ma rakhda ni preserve vairakhxa. 
+4. yesko analogy vaneko chai zip file ko concept sanga milxa, like .mp4 file xah rey 100mb ko teslai .zip ma compress garerw 10mb ko banayo tarw extract garda tw sabai kura firta aauxa intact. 
+5. inference efficiency vanekao nai real-world deployment ko main kura ho memory ani speed MLA le majjale optimize garxa. training ma chai yo use hudena kina vane training ma model lai full precision chainxa. 
+6. so olmo2 vanne model ma chai normalization layer ko placement was something unique. initially, original transformer architecture ma (decoder part) post-norm use hunthyo (mha paxi normalization (layernorm) ani feedforward layer paxi normalization), tespaxi pre-norm use huna thalyo in models like llama 3 8b, gpt2 (rmsnorm and layernorm were used respectively) ani finally olmo2 7b model ma chai post-norm inside residual huna thalyo which means original transformer architecture ma post-norm chai residual ko bahira thiyo vane olmo ma chai thyakkai ulto gardiyo jasle garda loss spikes(instability) (mostly seen in pre-norm usage) chai post-norm chai testo thena. 
+7. qknorm pani use vako thiyo olmo2 ma additional normalization ho applied to query and key jasle garda chai 
+   
+   ![[Pasted image 20250911004503.png]]
+
+
+
+
+
+
+
+
+
+
 # LLMS 
 
 1. [kimi-ai, a vision language model with only 2.8B active parameters, Mixture of Experts model](https://huggingface.co/moonshotai/Kimi-VL-A3B-Instruct)
@@ -11,7 +33,7 @@
 :scalable, real computer environment designed for benchmarking and developing multimodal AI agents that can perform open-ended tasks across multiple operating systems, including Ubuntu, Windows, and macOS
 
 
-# Mixture of Experts 
+# Mixture of Experts (moe)
 pecialized sub-networks (called "experts") and uses a gating mechanism to dynamically select which experts handle each input. 
 
 core components are experts, gating network(distributes the tasks to the experts), combiner(Aggregates the outputs from the selected experts)

@@ -1,0 +1,2 @@
+1. auto pilot ma hidnu vayena, situational awareness hunuparyo harek time, not only when required, ani balla tyo kura habitual and instinctive hunxa jati bela j kaam garda pani. 
+2. kaizen (small improvement every day)

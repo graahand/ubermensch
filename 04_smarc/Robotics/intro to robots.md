@@ -199,3 +199,109 @@ Elaborate:
 Evaluate:
 
 
+#######################################
+
+Prompt
+
+Write down the content for grade 4 students from Nepal following the instructions provided below. Strictly follow the guidelines mentioned.
+We are following the 5E instructional model for designing and writing this content.
+Core Philosophy (Context, Content, Real World Application and most importantly  Interactions)
+
+**Flow of the content and  Guidelines for each sections of the Chapter.**
+1. Overview of the chapter (must be generated strictly at last)
+2. Learning objectives (They should be written on the basis of the learning outcomes that will be provided for each lessons from the lesson plan for  grade 4). The writing format for learning outcomes: L01: learning outcomes, L02: learning outcomes like this. 
+3. Engaging students (use a **anology** that should be based on prior knowledge of the students of class 4 from Nepal which should spark curiosity inside the mind of students, this analogy idea will be provided by the user themself if not provided then craft by yourself). Strictly don't include  the topic itself (if the topic is about the  switch then you don't  include the word switch in the analogy rather introduce it after the analogy and  activity is completed. The activity for this part as well should not be technical but related to the topic(for example if teaching about switch, the activity which instruct students to use switch itself doesn't make sense at all as they don't know about it)). Additionally the generic questions raised should be answer as well simply. 
+   **engage part strict flow**
+	1. analogy related to prior knowledge
+	2. activity plan
+	3. questions related to activity (what if types questions)
+	4. conclude the activity and  connect to the topic
+	5. now introduce the topic with an example.
+4. Then comes explore part which should now relate with the above engage analogy to add the essence of the topic. Include examples and a activity related and relevant to topic followed 1-3 generic topic related question (strictly don't add technical question in technical language).  
+5. Then comes explain part which should explain what, why and how questions according to the context of the lesson. why, what and how shouldn't be explained in very long, lengthy sentences rather very short, sweet, straight and understandable way. if possible don't include all three questions in this explain part, keep one question for the elaborate part.  
+6. Then comes elaborate which should further expands what explained in the explaining step adding a step up and forcing them to think along with explaining any other topics that was missed or was out of scope in explain step(what why and how of explain phase). Starting of the elaborate part must contain the example of the concepts of topics explained in explain phase, followed by a activity that is actually related to topic and technical unlike the engage's activity,  then only based on those examples you enforce them to think learn more. 
+7. Then comes **let's think** part where you ask questions again allowing students to think and reason based on what explained and elaborated.
+8. Then add **let's summarize** section which summarizes the content of the lesson in bullet points this should be  aligned with the learning objectives and the overall content of the lesson. 
+9. And at last add a MCQ quiz (4-7) related to topics. 
+
+**Other Writing Guidelines to be followed**
+1.  Examples used in the content should be specifically nepali examples as much as possible, ING companies to be used where technology or food or education comes. unless the example must be a specific non-nepali example, use nepali example. also use the names that reflects the ethnicity of nepal like dolma, yonten, sujan, nisha, bibek, niraj and many more be creative regarding the names of places and people relevant specifically to Nepal and Nepali. for currency examples strictly use rupees instead of dollar or anything else.
+2. Strictly use british english.
+3. Flesch Readability score of generated content must be in the range of 75-85. 
+
+**Files to be attached are:**
+1. flowchart of how whole content should be generated or crafted, the strict flow that you must follow. 
+2. and Syllabus of grade 4
+3. sample content file that contains the properly crafted content for the Algorithm chapter for grade 4 students of Nepal. 
+
+Respond to this chat with (what you will do and what you won't and yes/no question if you understood  the task).
+After this chat the learning outcomes for the specific lesson, analogy idea,  will be provided and the content generation starts. 
+
+## prompt v1.3
+
+Write down the content for grade 4 students from Nepal following the instructions provided below. Strictly follow the guidelines mentioned. We are following the 5JE instructional model for designing and writing this content. Core Philosophy (Context, Content, Real World Application and most importantly Interactions) 
+
+Flow of the content and Guidelines for each section of the Chapter. 
+
+1. Overview of the chapter (must be generated strictly at last) 
+    
+
+2. Learning objectives (They should be written on the basis of the learning outcomes that will be provided for each lesson from the lesson plan for grade 4). The writing format for learning outcomes: L01: learning outcomes, L02: learning outcomes like this.  
+    
+
+3. Engaging students (use an analogy that should be based on prior knowledge of the students of class 4 from Nepal which should spark curiosity inside the mind of students, this analogy idea will be provided by the user themself if not provided then craft by yourself). Strictly don't include the topic itself (if the topic is about the switch, then you don't include the word switch in the analogy rather introduce it after the analogy and activity is completed. The activity for this part as well should not be technical but related to the topic (for example if teaching about switch, the activity which instructs students to use switch itself doesn't make sense at all as they don't know about it). Additionally, the generic questions raised should be answered as well simply.  
+    
+	1. engage part strict flow 
+	2. Analogy/question related to prior knowledge 
+	3. Activity plan (hands-on activity but not technical, generic that relates to the lesson 
+	4. Questions related to activity (what if type) 
+	5. Conclude the activity and connect to the topic 	
+	6. Introduce the topic with an example 
+	    
+
+10. Then comes the explore part which should now relate with the above engage analogy (limited instruction) to add the essence of the topic. Include examples and an activity related and relevant to topic followed 1-3 generic topic related question (strictly don't add technical question in technical language).  
+
+	1. Introduce an activity to let them explore the topic. 
+	2. Give minimal instructions to do the activity. 
+	    
+
+Multiple possible outcomes can be generated through this activity 
+
+6. Then comes the explain part which should explain what, why and how questions according to the context of the lesson. why, what and how shouldn't be explained in very long, lengthy sentences rather very short, sweet, straight and understandable way. If possible don't include all three questions in this explain part, keep one question for the elaborate part.  
+	1. Ask questions on the explore activity. 	
+	2. Address where they can make mistakes. 
+	3. Explain the importance of the topic, or about their possible mistakes. 
+	4. Explain about the results/outcomes they produce after the explore activity
+
+7. Then comes elaborate which should further expands what explained in the explaining step adding a step up and forcing them to think along with explaining any other topics that was missed or was out of scope in explain step (what why and how of explain phase). Starting of the elaborate part must contain the example of the concepts of topics explained in explain phase, followed by an activity that is related to topic and technical unlike the engage 'activity, then only based on those examples you enforce them to think learn more. 
+
+	1. Offer a real-world scenario and context related to the topic 
+	    
+	2. And explain the topic based on the real-world scenario and context 
+	    
+	3. Go as much as detailed for the grade, extend the topic 
+
+8. Then comes let's think part where you ask questions again allowing students to think and reason based on what explained and elaborated. 
+9. Then add let's summarize section which summarizes the content of the lesson in bullet points this should be aligned with the learning objectives and the overall content of the lesson.  
+10. And lastly, add a MCQ quiz (4-7) related to topics. 
+    
+
+Other Writing Guidelines to be followed 
+
+1. Examples used in the content should be specifically Nepali examples as much as possible, ING companies to be used where technology or food or education comes. unless the example must be a specific non-Nepali example, use Nepali example. also use the names that reflects the ethnicity of Nepal like dolma, Yonten, Sujan, Nisha, Bibek, Niraj and many more be creative regarding the names of places and people relevant specifically to Nepal and Nepali. for currency examples strictly use rupees instead of dollar or anything else. 
+
+2. Strictly use British English. 
+3. The Flesch Readability score of generated content must be in the range of 75-85. 
+
+Files to be attached are: 
+
+4. flowchart of how whole content should be generated or crafted, the strict flow that you must follow.  
+5. and Syllabus of grade 4 
+6. sample content file that contains the properly crafted content for the Algorithm chapter for grade 4 students of Nepal. 
+
+Respond to this chat with (what you will do and what you won't and yes/no question if you understood the task). After this chat the  
+
+4. learning outcomes for the specific lesson,  
+5. analogy idea,  
+
+will be provided and the content generation starts.
