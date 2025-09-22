@@ -1,4 +1,10 @@
 
+## hands-on
+
+|     |     |     |     |
+| --- | --- | --- | --- |
+|     |     |     |     |
+|     |     |     |     |
 
 # sebastian raskc
 1. grouped-query attention vaneko chai multi-headed attention vanda slightly different xah to reduce the cost, kina vane multi-head attention ma harek harek token ko lagi query, key ani values haru compute garnu parxa whereas grouped query attention ma yei kura queries haru ko group ko key ani values hunxa (share garxa same key and value query heads le) jasle garda compute cost significantly ghatxa, memory cost pani ghatxa.
@@ -13,7 +19,8 @@
 10. transformer blocks in llm architecture cannot be parallelized, they are strictly sequential so they are expensive in inference. 
 11. qwen3 ko 28 ota transformers blocks haru xan. its a deeper model.
 12. unlike deepseek v3 671b, qwen3-35b-a22b(moe) model doesn't usage the shared experts but have 8 experts active per token similar to the deepseek v3. this choice is one of the interesting choice which can be seen changing in next iteration of qwen models. 
-13. 
+13. top_k sampling and temperature scaling article [article](https://rumn.medium.com/setting-top-k-top-p-and-temperature-in-llms-3da3a8f74832)
+14. 
    ![[Pasted image 20250911004503.png]]
 
 

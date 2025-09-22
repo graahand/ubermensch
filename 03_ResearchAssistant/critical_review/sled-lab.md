@@ -14,7 +14,23 @@
 11. yo paper ma pahila pre-training ko belama model le naya words haru sikxa (base words), tespaxi few-shot learning ma chai language batw chai context nikalxa like (this is a [mask]) ani visual information image dekhi nikalxa tespaxi prediction garxa (prediction vaneko chai association ho visual entity ani tyo missing word ko bichma)
 12. incremental class learning vaneko chai naya objects haru siknu without forgetting something that have learnt before. 
 13. yo paper le Flicker30k dataset use gareko xah pre-training ko lagi with additional curation. 
-14. 
+14. OctoBERT model ko architecture ko kura garda chai, yesle chai pre-trained language model ani CNN use garxa text rw image ko relationship bujhna ko lagi. dual-stream vlm (text ani images), yo duita modalities haru respective encoder le encode garisakepaxi euta common format ma convert garixa ani tyo combine gareko text-image representations lai cross-encoder le self-attention mechanism ko lagi use garxa.tespaxi cross-encoder batw aayeko output lai object decoder ma pass garinxa jasle image batw objects haru context anusar identify garxa, tespaxi finally identify vako object ko basis ma text-decoder le language modelling garxa. 
+15. yesko example vaneko, let's suppose a input text "a man is playing football" with a image of man playing football. the text is processed by pre-trained language model to understand its meaning, tespaxi cnn le image batw objects and features extract garxa. tyo text rw image representation common format ma convert garerw combine hunxa, tespaxi cross-encoder le tyo combined information porcess garerw object decoder lai pathauxa  jasle object identify garxa (man and football) using the object queries and finally yesle text understanding rw generation chai improve garne vayo. 
+
+
+## qwen3 dense
+1. Think of this like a dictionary with 151,000 entries — every word or piece of word it can understand: what if any word other than these 151,000 words that the model knows?
+2. what about qk-norm? absolute positional embedding, NoPE as well right? so how the rotary differ and actual what does that rotation means? any example or analogy?
+3. it adjusts the scale of activations without shifting them.: what does this means? shifting them? how does this RMSNorm actually works in one liner tell me. 
+4. This helps the model learn complex patterns; i never understood the feed forward network inside of the transformer block, what is its purpose and how SiLU differ from ReLU, and how does the relationship/pattern is learnt here? on what input does this happens?
+5. what about residual blocks there and the cross sign button between SiLU block and linear layer. 
+6. gqa also calculates the attention score right? and what happens to this attention score?  
+7. A **linear layer** that maps the high-dimensional representation back to the **vocabulary size (151k)**: a high-dimensional representation as in? what does this means and how they are mapped to vocabulary size of what actually mapping means here?
+8. what about logits? are they also generated if yes then what generates them? 
+9. This refers to the **size of the feed-forward network’s inner layer**.: what does the feed forward network's inner layer actually means this is too much confusing. where are they located actually?
+10. also why many transformers blocks how does it actually works?
+11. deeper models vs wider model architecture and what are the architectural choices that actually affects the number of parameters size. 
+
 
 ==yo sled lab ko professor chai joyce y chai ho, uslai contact garne ki?==
 ==yo labs ko important papers haru:==

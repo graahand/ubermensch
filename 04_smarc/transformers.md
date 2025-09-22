@@ -1,5 +1,44 @@
 #rnd 
 [[llms]]
+[[molmo and pixmo]]
+
+
+Query is your specific question, Key is what information is about, and Value is the actual helpful answer - like asking "What's next after monarchy?" (query), matching to "Nepal's political history" (key), and getting "Nepal became a federal republic in 2008" (value).
+
+1. what if i ask the model to generate a 100 words essays on politics of Nepal then what happens in that scenario? wwhat is query, key and value in this case?
+		# The Essay Request: QKV in Action
+
+	Imagine you're in Sir Thapa's classroom asking for help with a Nepali politics essay.
+	
+	**Your Query (Q)**: "Generate a 100-word essay on politics of Nepal"  
+	This is like raising your hand and asking a specific question: "What should I write about Nepal's political system?"
+	
+	**The Keys (K)**: The model has stored thousands of "knowledge cards" about:
+	
+	- Nepal's federal structure
+	- Historical transitions from monarchy
+	- Major political parties
+	- Constitution of 2015
+	- Recent election patterns
+	
+	**The Values (V)**: For each key, there's detailed information:
+	
+	- When you ask about federalism (key), you get the value: "Nepal has 7 provinces established after the 2015 constitution"
+	- When you ask about historical context (key), you get the value: "The 2006 revolution ended monarchy and established republic"
+	
+	As the model writes each sentence, it's like a student in class:
+	
+	1. First, it checks what's most relevant to your request (query)
+	2. It finds matching knowledge cards (keys)
+	3. It selects the most appropriate information (values)
+	4. As it writes "Nepal transitioned from monarchy..." that becomes the new query for the next sentence
+	
+	The attention mechanism ensures the essay stays focused on Nepali politics rather than drifting to unrelated topics, just like how you'd stay focused on your question when getting help from Sir Thapa!
+
+2. Good inductive bias helps the model learn faster and make better predictions, just like knowing which parts of your morning routine matter most helps you arrive on time.
+3. how transformers ended the inductive bias of neural networks?
+		"The transformer doesn't end inductive bias," Sir Thapa explained. "It changes it. Instead of assuming 'nearby things matter most,' it assumes 'important connections exist everywhere, and I'll learn which ones matter.'"
+		
 
 # What is Transformers?
 It is a library of pretrained natural language processing, computer vision, audio and multimodal models for inference and training. The main features of transformer library are: 
