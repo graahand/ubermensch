@@ -305,3 +305,8 @@ Respond to this chat with (what you will do and what you won't and yes/no questi
 5. analogy idea,  
 
 will be provided and the content generation starts.
+
+
+
+word alerts and key terms sheet
+activities sheet

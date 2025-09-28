@@ -8,6 +8,7 @@ gpt.skill.edu: kerahoketa21
 odoo: xainakeiharako@90
 anki: kxahkhabaranki@111
 f:tr@nsformer#2025
+researchrabit: tr@nsformer#9002
 
 27000
 
