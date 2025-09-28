@@ -31,64 +31,64 @@
 ### Image Encoder 
 converts images into data the model understands. 
 
-| Parameter Name | Value     | What does  it does?                                                                    |
-| -------------- | --------- | -------------------------------------------------------------------------------------- |
-| Params         | 290m-310m | number of trainable weights/parameters where large models capture more visual details. |
-| Dim            | 1024      | feature dimension for visual processing, same across models.                           |
-| MLP Dim        | 4096      |                                                                                        |
-| Activation     | GELU      |                                                                                        |
-| Heads          | 16        | parallel attention heads                                                               |
-| KV Heads       | 16        | key-value attention heads                                                              |
-| Layers         | 23        |                                                                                        |
-| Image Size     | 336 x 336 |                                                                                        |
-| Patch Size     | 14        |                                                                                        |
-| Dropout        | 0.0       |                                                                                        |
+| Parameter Name | Value     | What does  it does?                                                                                                                                                                                                                  |
+| -------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Params         | 290m-310m | number of trainable weights/parameters where large models capture more visual details.<br>Like the number of nerve cells in your eyes. More cells mean better vision. Molmo has 290 million "digital nerve cells" to process images. |
+| Dim            | 1024      | Imagine this as the number of colors your eyes can distinguish. Your eyes see millions of colors, but Molmo uses 1024 "digital color channels" to understand images.                                                                 |
+| MLP Dim        | 4096      | This is like how your brain combines colors to recognize objects. 4096 means Molmo has 4096 different ways to combine visual features to understand what it sees.                                                                    |
+| Activation     | GELU      | Think of this as the "thinking style" of your visual system. GELU is like how your eyes automatically focus on important things while ignoring background noise.                                                                     |
+| Heads          | 16        | parallel attention heads                                                                                                                                                                                                             |
+| KV Heads       | 16        | key-value attention heads                                                                                                                                                                                                            |
+| Layers         | 23        | This is like 23 stages of looking at an image. First you see it as a whole, then details, then connections between details - like when you first see a painting, then notice brush strokes, then understand the meaning              |
+| Image Size     | 336 x 336 |                                                                                                                                                                                                                                      |
+| Patch Size     | 14        | How the AI divides the image into small pieces, like cutting a photo into 14×14 pixel puzzle pieces for closer examination.                                                                                                          |
+| Dropout        | 0.0       |                                                                                                                                                                                                                                      |
 
 ### VLM Connector
 links visual understanding with language capabilities.
 
 
-| Parameter Name | Value      | What does it does?                                                                                |
-| -------------- | ---------- | ------------------------------------------------------------------------------------------------- |
-| params         | 12m-310mm  | connector size grows with model scale (bigger the model, bigger the vlm parameters count as well) |
-| pool size      | 2x2        | 2x2 matrix grouped for pooling (like summarizing)                                                 |
-| pool dim       | 1024       |                                                                                                   |
-| pool heads     | 16         |                                                                                                   |
-| MLP Dim        | 1024-59136 |                                                                                                   |
-| Activation     | SwiGLU     |                                                                                                   |
-| Dropout        | 0.0        |                                                                                                   |
+| Parameter Name | Value      | What does it does?                                                                                                                                     |
+| -------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| params         | 12m-310mm  | connector size grows with model scale (bigger the model, bigger the vlm parameters count as well)                                                      |
+| pool size      | 2x2        | 2x2 matrix grouped for pooling (like summarizing)                                                                                                      |
+| pool dim       | 1024       | The size of the "translation dictionary" that helps convert visual information into language concepts.                                                 |
+| pool heads     | 16         | Different translation styles - like how a translator might use formal language for business documents but casual language for conversations.           |
+| MLP Dim        | 1024-59136 | How many ways the translator can express visual information in words. Larger models have much bigger "translation vocabulary" (59,136 ways vs. 1,024). |
+| Activation     | SwiGLU     |                                                                                                                                                        |
+| Dropout        | 0.0        |                                                                                                                                                        |
 
 
 ### LLM
 language understanding component. 
 
 
-| Parameter Name | Value         | What does it does?                                                 |
-| -------------- | ------------- | ------------------------------------------------------------------ |
-| params         | 1.2b-72b      | 1b-e is for moe model                                              |
-| embed          | 50304-152064  | vocabulary size for language embedding                             |
-| dim            | 2048-8192     | langauge feature dimension                                         |
-| mlp dim        | 2048x64-59136 |                                                                    |
-| activation     | SwiGLU        |                                                                    |
-| Heads          | 16-80         | attention heads                                                    |
-| KV heads       | 4-8           | relatively small for language model as comapred to vision encoder. |
-| layers         | 16-64         |                                                                    |
-| theta          | 10k-1m        | positional encoding range for handling longer sequences.           |
-| dropout        | 0.1           | small dropout only in llm                                          |
+| Parameter Name | Value         | What does it does?                                                                                                                                                                                     |
+| -------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| params         | 1.2b-72b      | 1b-e is for moe model                                                                                                                                                                                  |
+| embed          | 50304-152064  | vocabulary size for language embedding                                                                                                                                                                 |
+| dim            | 2048-8192     | How much detail the model uses to understand each word. Like knowing not just that "run" means to move fast, but also understanding "run a business" or "run for office."                              |
+| mlp dim        | 2048x64-59136 | How many ways the model can combine word meanings. The biggest model has 59,136 ways to understand how words relate to each other.                                                                     |
+| activation     | SwiGLU        |                                                                                                                                                                                                        |
+| Heads          | 16-80         | attention heads                                                                                                                                                                                        |
+| KV heads       | 4-8           | relatively small for language model as comapred to vision encoder.                                                                                                                                     |
+| layers         | 16-64         |                                                                                                                                                                                                        |
+| theta          | 10k-1m        | positional encoding range for handling longer sequences.<br><br>How long a conversation the model can follow. 1 million means it can remember a very long conversation, like following an entire book. |
+| dropout        | 0.1           | small dropout only in llm                                                                                                                                                                              |
 
 ### Pre-training
 initial training on image caption pairs. 
 
 
-| Parameter Name | Value        | It does what?                                            |
-| -------------- | ------------ | -------------------------------------------------------- |
-| Warmup steps   | 2000         | gradual learning rate increase                           |
-| Learning rate  | 2e-5 to 6e-6 | lr decreases for larger models because they learns fast. |
-| cosine delay   | 10%          |                                                          |
-| eps            | 1e-6         | prevents division error during trainining                |
-| betas          | 0.9, 0.95    | momentum parametes for optimizer stability               |
-| batch size     | 128          |                                                          |
-| steps          | 22.3k        | total training iterations.                               |
+| Parameter Name | Value        | It does what?                                                                                                                                                                                     |
+| -------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Warmup steps   | 2000         | gradual learning rate increase,<br><br>The "warming up" period where the AI starts learning slowly before going full speed, like when you start studying a new subject gently before diving deep. |
+| Learning rate  | 2e-5 to 6e-6 | lr decreases for larger models because they learns fast.<br><br>How fast the model learns during pre-training. Smaller models learn faster (2e-5) while larger ones learn more carefully (6e-6)   |
+| cosine delay   | 10%          | How the learning speed gradually decreases, like how you might study intensely at first but then slow down as you master the material                                                             |
+| eps            | 1e-6         | prevents division error during trainining                                                                                                                                                         |
+| betas          | 0.9, 0.95    | momentum parametes for optimizer stability<br><br>How the model remembers past learning, like how you build on previous knowledge when learning new things.                                       |
+| batch size     | 128          |                                                                                                                                                                                                   |
+| steps          | 22.3k        | total training iterations.                                                                                                                                                                        |
 
 ### Finetuning
 specialized trainign for specific tasks.
