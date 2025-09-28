@@ -27,7 +27,81 @@
 3. CLOSE-UP VIEW (HIGH-RES)
 
 
+## Molmo Model Parameters 
+### Image Encoder 
+converts images into data the model understands. 
 
+| Parameter Name | Value     | What does  it does?                                                                    |
+| -------------- | --------- | -------------------------------------------------------------------------------------- |
+| Params         | 290m-310m | number of trainable weights/parameters where large models capture more visual details. |
+| Dim            | 1024      | feature dimension for visual processing, same across models.                           |
+| MLP Dim        | 4096      |                                                                                        |
+| Activation     | GELU      |                                                                                        |
+| Heads          | 16        | parallel attention heads                                                               |
+| KV Heads       | 16        | key-value attention heads                                                              |
+| Layers         | 23        |                                                                                        |
+| Image Size     | 336 x 336 |                                                                                        |
+| Patch Size     | 14        |                                                                                        |
+| Dropout        | 0.0       |                                                                                        |
+
+### VLM Connector
+links visual understanding with language capabilities.
+
+
+| Parameter Name | Value      | What does it does?                                                                                |
+| -------------- | ---------- | ------------------------------------------------------------------------------------------------- |
+| params         | 12m-310mm  | connector size grows with model scale (bigger the model, bigger the vlm parameters count as well) |
+| pool size      | 2x2        | 2x2 matrix grouped for pooling (like summarizing)                                                 |
+| pool dim       | 1024       |                                                                                                   |
+| pool heads     | 16         |                                                                                                   |
+| MLP Dim        | 1024-59136 |                                                                                                   |
+| Activation     | SwiGLU     |                                                                                                   |
+| Dropout        | 0.0        |                                                                                                   |
+
+
+### LLM
+language understanding component. 
+
+
+| Parameter Name | Value         | What does it does?                                                 |
+| -------------- | ------------- | ------------------------------------------------------------------ |
+| params         | 1.2b-72b      | 1b-e is for moe model                                              |
+| embed          | 50304-152064  | vocabulary size for language embedding                             |
+| dim            | 2048-8192     | langauge feature dimension                                         |
+| mlp dim        | 2048x64-59136 |                                                                    |
+| activation     | SwiGLU        |                                                                    |
+| Heads          | 16-80         | attention heads                                                    |
+| KV heads       | 4-8           | relatively small for language model as comapred to vision encoder. |
+| layers         | 16-64         |                                                                    |
+| theta          | 10k-1m        | positional encoding range for handling longer sequences.           |
+| dropout        | 0.1           | small dropout only in llm                                          |
+
+### Pre-training
+initial training on image caption pairs. 
+
+
+| Parameter Name | Value        | It does what?                                            |
+| -------------- | ------------ | -------------------------------------------------------- |
+| Warmup steps   | 2000         | gradual learning rate increase                           |
+| Learning rate  | 2e-5 to 6e-6 | lr decreases for larger models because they learns fast. |
+| cosine delay   | 10%          |                                                          |
+| eps            | 1e-6         | prevents division error during trainining                |
+| betas          | 0.9, 0.95    | momentum parametes for optimizer stability               |
+| batch size     | 128          |                                                          |
+| steps          | 22.3k        | total training iterations.                               |
+
+### Finetuning
+specialized trainign for specific tasks.
+
+| Parameter Name | Value        | it does what? |
+| -------------- | ------------ | ------------- |
+| warmup steps   | 2000         |               |
+| Learning rate  | 5e-6 to 3e-6 |               |
+| cosine decay   | 10%          |               |
+| epsilon        | 1e-6         |               |
+| betas          | 0.9, 0.95    |               |
+| batch size     | 256          |               |
+| steps          | 20k-32k      |               |
 
 A RESEARCH PAPER ONE AFTER ANOTHER WILL BE UPLOADED IN THIS CHAT, AND THEN SPECIFIC PARTS FROM THE PAPER, DIFFERENT QUESTIONS RELATED TO THE PAPER NEEDS TO BE DONE BY YOU. THE EXPLANATION MUSTN'T BE VERY LENGTHY RATHER IT SHOULD BE A STORYTELLING (NO EMOJIS ALLOWED) EXPLANATION YOU MAKE IT CLEAR BY PROVIDING ANALOGIES, EXAMPLES, SCENARIOS, SPECIAL NOTES, ALERT NOTES, INSIDER NOTE MAYBE ANYTHING THAT WILL HELP TO UNDERSTAND THAT TOPIC OR CONCEPT WITH CONTEXT. 
 
