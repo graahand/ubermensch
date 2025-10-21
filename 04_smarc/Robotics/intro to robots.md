@@ -1,12 +1,42 @@
-1. robots vanda bittikai, yesle garnu parne (must) kaam chai DDD(Dangerous, Dull, Dirty) tasks haru automate garnu paryo ani robots haru le context sanga/surrounding sanga interact garerw kei hadh samma, fully automated navayepani decisions haru chai lina saknu paryo, like line following robot.
+
+
+## Grade 4-5 Inter-lesson Alignment, Complexity and Progression Prompt
+
+I WANT YOU TO ACT AS A CRITIC, A CLASSIFIER, COMMENTER AND THE VERIFIER OF YOUR OWN ACTIONS (CRITIC, CLASSIFY, COMMENT/REMARKS). SO THE BACKGROUND OR CONTEXT IS THAT, WE ARE DEVELOPING A ROBOTICS COURSE FOR GRADE 4-9 STUDENTS FROM NEPAL IN A VERY THOUGHTFUL PHILOSOPHY OF CONTEXT, CONTENT, REAL WORLD APPLICATION AND SPECIALLY 5E LEARNING PHILOSOPHY FOR KIDS. GRADE 4 AND 5 LESSONS ARE SIMILAR  AND IN PROGRESSIVE WAY. FOR EXAMPLE:
+Lesson 2 of grade 4 is parts of robot,  lesson 2 of grade 5 is robots subsystems covering similar content but the gradual progression in the complexity is added to grade 5 chapter as compared to grade 4 which is very obvious as well.
+
+YOUR TASK IS TO CHECK WHETHER THE COMPLEXITY PROGRESSION IS CORRECT AND ACCORDING TO HOW IT NEED TO BE SUCH THAT THE CONTENT MUST BE IN SAME UNDERSTANDING/COGNITIVE LEVEL FOR GRADE 4 AND GRADE 5 STUDENTS. DON'T USE ANY TABLES WHILE GENERATING THE RESPONSE.
+
+ALSO YOUR ANOTHER TASK IS TO SUGGEST IF ANY CHANGES ARE REQUIRED, THOSE CHANGES MUST BE URGENT (IN SCALE OF 10, IT NEED TO BE 7 OR MORE URGENT) THEN ONLY YOU PROVIDE SUGGESTIONS OR REPHRASING THE SENTENCES AND TELL EXACTLY IN WHICH PART OR WHICH SECTION THIS CHANGE IS REQUIRED. 
+
+YOU WILL BE PROVIDED WITH THE LESSON'S CONTENT OF GRADE 4 AND 5 AT SAME TIME THEN YOU PROCEED TO WORK AS MENTIONED ABOVE. RESPOND WITH  YES OR NO TO SHOW WHETHER YOU HAVE ANY CONFUSION OR NOT. 
+
+
+
+
+## Learning Objectives and Quiz Alignment Prompt
+I WANT YOU TO ACT A CRITIC, A CLASSIFIER AND A COMMENTER FOR THE CONTENT I HAVE WRITTEN. THE CONTENT IS FROM DIFFERENT LESSONS. THESE LESSONS ARE THE PART OF ROBOTICS COURSE THAT WE ARE BUILDING FOR KIDS AND STUDENTS OF GRADE 4-9 FROM NEPAL, CREATING FUTURE INNOVATORS, EXPLORER, BUILDERS. I WILL PROVIDE YOU THE CONTENT OF EACH LESSON. YOU NEED TO FOCUS ON LEARNING OBJECTIVES AND IN WHICH SECTION DOES THAT LEARNING OBJECTIVE HAVE BEEN ADDRESSED, AND CHECK THE QUIZ SECTION AND CLASSIFIY AND COMMENT WHETHER ANY TRIVIAL OR OUT OF CONTEXT QUIZ QUESTION IS INCLUDED IN THE LESSON CONTENT. YOUR WORKING TECHNIQUE IS, FIRST YOU ACT, THEN YOU VERIFY WHETHER YOU ACTUALLY ARE AWARE OF WHAT CLASSIFICATION YOU HAVE GIVEN WHAT COMMENTS YOU HAVE PROVIDED ARE THEY ACTUALLY MAKES SENSE. REMEMBER NOT TO CREATE ANY TABLE OR THE CONTENT IN TABULAR FORMAT WHICH ARE VERY LONG HORIZONTALLY
+
+ALSO WHAT YOU WILL DO IS SUGGEST SOME SENTENCES OR PHRASES THAT STRENGTHEN THE LOOSELY RELEVANT OBJECTIVE. THIS  SUGGESTION MUST BE URGENT AND ANY KIND OF "WILL BE GOOD" KIND OF SENTENCES SHOULDN'T BE SUGGESTED, VERY CONCRETE ONE ONLY. 
+REGARDING QUIZ ALSO WHEN YOU CRITICIZE OR CLASSIFY, YOU SUGGEST AND SHOW  EXAMPLE AS WELL OF HOW SHOULD IT CAN ACTUALLY BE. 
+
+
+
+| LESSON   | COMMENT                                                         |
+| -------- | --------------------------------------------------------------- |
+| LESSON 3 | automated machines and robots distinction is somehow not clear. |
+|          |                                                                 |
+
+
+2. robots vanda bittikai, yesle garnu parne (must) kaam chai DDD(Dangerous, Dull, Dirty) tasks haru automate garnu paryo ani robots haru le context sanga/surrounding sanga interact garerw kei hadh samma, fully automated navayepani decisions haru chai lina saknu paryo, like line following robot.
 
 > [!NOTE] Charles Deguire, Kinova Inc
 > But I realized how having anastronaut doing remote  manipulation with a
 > space robot arm could be an aberration when people in wheelchairs could not even pour themselves a glass of water alone.
 
-2. Leonardo da vinci le robotics ma pani contribution diyeko xan, jesma usle human anatomy and kinematics lai ramro sanga research garerw, tyo kura haru lai chai automation, robotics ma implement gareko painxa, josko example Leanardo's Fiat vanne automated(self-propelled) cart xa. yesko fully working replica 2006 ma Florence vanne thauma banaiyeko xah. [link](https://en.wikipedia.org/wiki/Leonardo%27s_self-propelled_cart)
-3. Vaucanson's Digesting Automated Duck (replicates the actual duck)
-4. simulation rw automation ko difference k ho vanda, simulation ma chai just yo kura chalxa kina chalxa thahaxaina, just chalxa. But automation ma chai aim k hunxa vanda robot chalxa vane kasari chalxa? mechanics pani explain garne aim hunxa. 
+3. Leonardo da vinci le robotics ma pani contribution diyeko xan, jesma usle human anatomy and kinematics lai ramro sanga research garerw, tyo kura haru lai chai automation, robotics ma implement gareko painxa, josko example Leanardo's Fiat vanne automated(self-propelled) cart xa. yesko fully working replica 2006 ma Florence vanne thauma banaiyeko xah. [link](https://en.wikipedia.org/wiki/Leonardo%27s_self-propelled_cart)
+4. Vaucanson's Digesting Automated Duck (replicates the actual duck)
+5. simulation rw automation ko difference k ho vanda, simulation ma chai just yo kura chalxa kina chalxa thahaxaina, just chalxa. But automation ma chai aim k hunxa vanda robot chalxa vane kasari chalxa? mechanics pani explain garne aim hunxa. 
 
 
 

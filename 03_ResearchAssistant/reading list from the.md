@@ -7,21 +7,29 @@
 
 ### vlm and action theme
 
-1. manipulate anything (2024, CoRL)
-2. AHA, JIAFEI DUAN
-3. Robopoint, jiafei duan 
-4. task me anything, jieyu zhang 
-5. molmoact, jieyu zhang.
-6. CAPTURe, jaemin cho
-7. paxion, jaemin cho
-8. textless vision language transformer, jaemin cho
+
+| paper                                                                                                            | status                                                                                                             |
+| ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| 1. manipulate anything (2024, CoRL), [Jiafei Duan](https://arxiv.org/search/cs?searchtype=author&query=Duan,+J), | completed reading, explanation required with some internal study and crucial critical review for medium blog post. |
+| 2. AHA, JIAFEI DUAN                                                                                              |                                                                                                                    |
+| 3. Robopoint, jiafei duan                                                                                        |                                                                                                                    |
+| 4. task me anything, jieyu zhang                                                                                 |                                                                                                                    |
+| 5. molmoact, jieyu zhang.                                                                                        |                                                                                                                    |
+| 6. CAPTURe, jaemin cho                                                                                           |                                                                                                                    |
+| 7. paxion, jaemin cho                                                                                            |                                                                                                                    |
+| 8. textless vision language transformer, jaemin cho                                                              |                                                                                                                    |
+
 ### data collection, synthesis and innovation theme 
 
-1. datacomp, jieyu zhang
-2. EnvGen, jaemin cho
-3. provision, jieyu zhang
-4. sugarcrepe, jieyu zhang
-5. ar2-d2, jiafei duan 
+
+| paper                   | status |
+| ----------------------- | ------ |
+| datacomp, jiyeu zhang   |        |
+| EnvGen, jaemin cho      |        |
+| provision, jieyu zhang  |        |
+| sugarcrepe, jieyu zhang |        |
+| ar2-d2, jiafei duan     |        |
+
 
 
 ### 3d and vlm grounding
