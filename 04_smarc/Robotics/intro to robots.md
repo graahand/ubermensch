@@ -1,3 +1,83 @@
+****
+## Technical Fact Check
+
+YOU NEED TO CHECK THE TECHNICAL CORRECTNESS FROM THE CONTENT OF DIFFERENT LESSONS I WILL BE PROVIDING YOU. THE LESSONS ARE FOR GRADE 8 STUDENTS AND THE COURSE IS ABOUT ROBOTICS. THE CONTENT IS WRITTEN IN 5E PHASE FRAMEWORK EMPHASIZING STORYTELLING, EASE OF READ, ACTIVATING PRIOR KNOWLEDGE, HANDS-ON ACTIVITIES, EVALUATION, DEEPENING THE UNDERSTANDING AND SO ON. WHILE THIS FRAMEWORK BREAK DOWN THE LESSON OR CONCEPT IN DIFFERENT PHASES TO EASE THE LEARNING PROCESS BUT IT ALSO RISKS THE INCORRECT INFORMATION FLOW THROUGH THE ANALOGIES OR SIMPLE SENTENCES USED FOR THE EASE OF READ FOR SMALL KIDS. SO WE NEED TO CHECK THOSE MINOR TO MINOR TECHNICAL INCORRECTNESS FROM THE LESSON. YOU NEED TO: 
+1. CLASSIFY THE CONTENT AS TECHNICALLY CORRECT OR NOT (ONE SHOT)
+2. THEN QUANTIFY HOW YOU CLASSIFIED IT TO BE TECHNICALLY CORRECT SHOWING RELEVANT SECTIONS. 
+3. IF ANY TECHNICALLY INCORRECT PHRASE, PARAGRAPHS OR ANALOGIES ARE PRESENT THEN YOU DIRECTLY POINTS THOSE PARTS EXPLICITLY AND SUGGEST THE CORRECTION SUGGESTION, THE CORRECTION AND REASON SHOULD BE VERY CLEAR AND NON-CONFUSING FOR ME TO JUSTIFY WHETHER THE SUGGESTED PROBLEMATIC CONTENT IS ACTUALLY PROBLEMATIC OR NOT. 
+4. WHILE YOU POINT OUT THE PROBLEMATIC PARTS DO PROVIDE THE SNIPPET OF THAT PART SUCH THAT IT CAN BE SEARCHED AND CORRECTED EASILY, DON'T JUST MENTION THE SECTION LIKE EXPLAIN SECTION, ENGAGE INSTEAD PROVIDE SNIPPET OF PHRASES. 
+5. RATE THE PROBLEMATIC PARTS AS CRITICAL, OPTIONAL, AND OTHER LABELS IF REQUIRED. 
+6. YOU WILL BE PROVIDED WITH THE REFERENCE MATERIAL RELATED TO COURSE THROUGH  WHICH YOU NEED TO VALIDATE AS WELL. 
+7. AT THE BEGINNING  OF THE  RESPONSE MENTION THE LESSON NUMBER AND LESSON NAME AS WELL. 
+8. THE RATIONALE YOU PROVIDE OR THE DESCRIPTION, EXPLANATION YOU PROVIDE SHOULD BE VERY SIMPLE AND UNDERSTANDABLE FOR  A LAYMAN OR JUST SAY IT SHOULD BE SIMPLIFIED WITHOUT LEAVING THE NUANCE INFORMATION. ITS BEING HARD FOR ME TO JUSTIFY YOUR COMMENTS AND PROBLEMATIC PARTS IN THE CONTENT. 
+9. IDENTIFY THE GAPS IN THE LESSON KEEPING IN THE MIND THE COMPLEXITY OF THE CONTENT AND WHETHER THE GRADE 8 KIDS CAN COGNITIVELY GRASPS THOSE CONCEPT AND ACTUALLY THINK THEY ARE USEFUL. 
+
+
+RESPOND YES, IF YOU CAN HELP ME WITH THIS.
+
+
+Project Lists;
+Grade 4: 
+1. line following robot
+2. obstacle avoidance robot
+3. patrolling  robot
+4. edge detection robot
+
+Grade 5: 
+1. maze solving robot
+2. traffic light follower
+3. shopping robot
+4. smart parking robot
+
+Grade 6:
+1. Metal sorting robotic arm
+2. warehouse robot
+3. wrestling robot
+4. hand mimicking robot
+
+Grade 7: 
+1. companion robot
+2. agricultural robot
+3. cleaning robot
+4. cultivation robot
+5. fire control robot
+
+Grade 8: 
+1. bomb disposal robot
+2. trolley robot
+3. self-balancing robot
+4. mars rovers
+
+Grade 9: 
+1. Companion Robot
+2. Follow-Me Trolly
+3. Amazon Warehouse
+4. Do you know me Robot
+5. waste classifying robot
+
+## 27  october
+1. Correctness in technical activity (teha deko circuit diagram ani instrcution le correctly tyo activity perform garna sakinxa ki nai)
+2. Repetetion in technical activity (lesson 1 ma vako same activity feri lesson 7 ma repeat vako xah ki nai (grade anusar))
+3. Complexity progression in technical activity (ani yo chai grade 5 ma led balna sikako activity same way ma feri grade 7 ma pani sikako xah vane that's bad, complexity progression milena so tyo led balne tarika and circuit chai different and cognitively complex hunuparyo grade anusar)
+
+
+### ando
+correctness check garna AI use garda hunxa.
+repetition check garna ko lagi active tracking garna paryo 
+complexity progression ko lagi pani tracking batw help milxa, activities haru sang sangai tyo  activity ko euta short description pani provide garna jun description herepaxi tyo activity ko complexity level thaha hos. 
+
+1. activities haru  ko matrai  technical review garne ki whole content ko?
+2. maile ajha observe gare anusar chai activity sang sangai overall content ko euta brief descriptive technical aspect lekhnu parxa jasto xah. tyo lesson ma k address vako xah kasari address vako xah, kei kami kamjori  haru xah ki nai ani if xah vane teslai kasari improvise garna sakinxa. 
+3. yo description le ani ballla repetition and complexity progression anayse garna help garxa otherwise it's hard. 
+4. also kun lesson ma chai actual technical activity required xa ani kun ma chai xaina yo pani clarify garna parxa, like sensor and action mapping vanne lesson xa vane yesma actual sensor ani actuator control garaune activity rakhne ki concept related but non-technical or hands-on activity rakhne?
+
+
+
+
+
+
+
+
 
 
 ## Grade 4-5 Inter-lesson Alignment, Complexity and Progression Prompt

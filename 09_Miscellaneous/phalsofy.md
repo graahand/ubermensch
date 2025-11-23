@@ -18,4 +18,8 @@ Nietzshche, **over-intellectualization** or **decadence**
 7. Metaphysics is like asking **“what is everything really made of, and why does it exist at all?**
 
 
+Synthetic a priori judgment, immanual kant.
+aposteri judgement, 
+
+
 

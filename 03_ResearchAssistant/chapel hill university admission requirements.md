@@ -1,4 +1,4 @@
-
+o
 ## Master's
 
 1. graduate studies committee is the operational component for chapel hill's computer science faculty. 
@@ -11,19 +11,19 @@
 8. need a clarification on what exactly is the unofficial transcript means, is it from the evision or what? 
 9. **The UNC Graduate School offers a select number of fellowships to PhD and MS graduate students in Computer Science. To receive full consideration for these fellowships, we recommend you submit your application by December 16, 2025.  To receive full consideration for a Research Assistantship (RA) or a Teaching Assistantship (TA) from the Computer Science department, we recommend you submit your application by January 5, 2026. The deadline to submit your application to the UNC Graduate School to be considered for admission to the PhD and MS programs in Computer Science is March 10, 2026.**
 
-| Requirements                       | Status                                                                    | Remarks                                                                                                                            |
-| ---------------------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| university online  application     |                                                                           | costs 95$                                                                                                                          |
-| receipt of application fee payment | around NPR 10000                                                          | can do                                                                                                                             |
-| transcripts unofficial             |                                                                           | unofficial upload for application evaluation only. if get selected then they will ask  for official one                            |
-| 3 letters of recommendation        |                                                                           | email addresses need to be included. niraj dai, alish sir and one more someone who can tell me about social and human side aspect. |
-| GRE                                |                                                                           | not required                                                                                                                       |
-| TOEFL, IELTS or Duolingo           | can do                                                                    | score above 90, 7, 110 respectively                                                                                                |
-| statement of purpose (SoP)         |                                                                           | instagram handle xah yo gardine.                                                                                                   |
-| resume/CV                          | updated but requires improvisation.                                       | ready.                                                                                                                             |
-| supplemental program information   |                                                                           | any additional information that you think the university should know about. (internship completion letter huna sakxa)              |
-| Degree                             | 1st class conferred<br><br>requires 3.0 GPA out of 4.0, at least B grade. | either 4-year curriculum or any degree recognized by Bologna accord, so 3-years british degree is acceptable.                      |
-| criminal background check document | required as part of community standards questions                         |                                                                                                                                    |
+| Requirements                       | Status                                                              | Remarks                                                                                                                            |
+| ---------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| university online  application     | jan 5, 2026                                                         | costs 95$                                                                                                                          |
+| receipt of application fee payment | around NPR 10000                                                    | can do                                                                                                                             |
+| transcripts unofficial             | Done                                                                | unofficial upload for application evaluation only. if get selected then they will ask  for official one                            |
+| 3 letters of recommendation        | 2 Done, One from Apil Dai  (Colleague Recommendation Letter)        | email addresses need to be included. niraj dai, alish sir and one more someone who can tell me about social and human side aspect. |
+| GRE                                | Done                                                                | not required                                                                                                                       |
+| TOEFL, IELTS or Duolingo           | Get a Date or Prepare                                               | score above 90, 7, 110 respectively                                                                                                |
+| statement of purpose (SoP)         | Done almost!                                                        | instagram handle xah yo gardine.                                                                                                   |
+| resume/CV                          | Done                                                                | ready.                                                                                                                             |
+| supplemental program information   |                                                                     | any additional information that you think the university should know about. (internship completion letter huna sakxa)              |
+| Degree                             | Done                                                                | either 4-year curriculum or any degree recognized by Bologna accord, so 3-years british degree is acceptable.                      |
+| criminal background check document | required as part of community standards questions. (Police Officer) |                                                                                                                                    |
 
 [check this goldmine](https://cs.unc.edu/research/groups/)
 

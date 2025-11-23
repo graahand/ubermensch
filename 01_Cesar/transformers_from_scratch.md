@@ -1,6 +1,10 @@
 #rnd #llm 
 [[llms#llms in production]]
 
+
+
+
+
 # TRANSFORMER FROM SCRATCH
 
 ## 1. INPUT EMBEDDINGS IN TRANSFORMER ( FIRST LAYER)
@@ -96,7 +100,7 @@ Attention is applied to the smaller matrices which provides smaller molar  matri
 
  Word Embedding is used for converting words into numbers for neural network architecture. It is relatively simple neural network that has one input for every word and symbol in the vocabulary that you want to use. The text is fragmented using special characters like <EOS> which stands for end of sequence. 
 
-![image.png](attachment:fdec2708-7645-4680-97e0-7d6c1ca94604:image.png)
+
 
 The vocabulary can be mix of words, word fragments and those fragments are called tokens. Inputs are connected to activation functions and each connection multiplies the input value by weight. The weights are multiplied with the input value for the each individual words and passed through activation function to provide the output (numbers) which is the representation of that words in embedding space. 
 
@@ -108,11 +112,11 @@ The process of optimizing the weights is called Training.
 
 For dealing with order of the words in sentence for correct meaning positional encoding set the numbers that correspond to word order to the embedding values for each word. 
 
-![image.png](attachment:c474df30-068e-448b-a913-d2bb1e87a168:image.png)
+
 
 The numbers that represents the word order comes from a sequence of **alternating Sine and Cosine squiggles.**
 
-![image.png](attachment:6014152e-8fa2-4343-ab22-3f0378138426:image.png)
+
 
 Each squiggle gives specific position values for each word’s embeddings. Because the Sine and Cosine squiggles are repetitive, it’s  possible that two words might get the same position, or y-axis value.  
 
@@ -120,13 +124,13 @@ The more embedding values we have, the squiggles get proportionately wider. Due 
 
 Finally the embedding values are summed with the encoding values to create a whole sentence. 
 
-![image.png](attachment:232f686e-3e8c-4478-983f-ed5d7101e948:image.png)
+
 
 ### How Transformer Keeps Track of Relationship Among Words?
 
 Example: 
 
-![image.png](attachment:fd38f800-7864-4b5c-98f0-7624a3ce8b7f:image.png)
+
 
 Transformer have self-attention,which is a mechanism to correctly associate the word ‘it’ with the word ‘pizza’.
 
@@ -134,11 +138,11 @@ Self-Attention works by seeing how similar each word is to all of the words in t
 
 For example: Self-Attention calculates the similarity between the first word, **The,** and all of the words in the sentence. 
 
-![image.png](attachment:ff798917-416d-4918-822f-e90f4fdc9ebc:image.png)
+
 
 Self-Attention calculates these similarities for every word in the sentence. 
 
-![image.png](attachment:4db227c6-a6e9-4032-bd28-bc39d34f7d3e:image.png)
+
 
 Once the similarities are calculated, they are used to determine how the Transformer encodes each word.
 
@@ -148,11 +152,10 @@ The positional-encoding + embedding values and produce **Query Value** for each 
 
 How does the similarity calculated?
 
-![image.png](attachment:be510fca-894a-480e-8567-d35b7160a0d8:image.png)
+
 
 The key value ( the same query value but for the different words) called Key Value. Then the similarity between the **query** and **keys** by calculating the **Dot Product** between them. 
 
-![Dot Product calculation for word Let’s](attachment:31595dc0-1a1e-4a6f-80b8-cda901fd7858:image.png)
 
 Dot Product calculation for word Let’s
 
@@ -202,7 +205,7 @@ These four features allow the Transformer to encode words into numbers, encode t
 - Self-Attention
 - Residual Connections
 
-![image.png](attachment:c2caf10e-08b9-4c7c-9e77-61de30d84bcf:image.png)
+
 
 Transformer consists of two parts Encoder and Decoder. Above notes explain the  working mechanism of it, the decoder in the other hand create embedding values for output vocabulary which consists of output words. 
 
@@ -211,8 +214,6 @@ The <EOS> token is used first to start the decoding because that is a common way
 The sets of Weights we used to calculate the Decoder’s Self-Attention Query, Key and Value are different from the sets we used in Encoder. 
 
 The main idea of Encoder-Decoder Attention is to allow the Decoder to keep track of significant words in the input. 
-
-![image.png](attachment:4daf01eb-93f6-4ea7-9942-35cf7537e65f:image.png)
 
 The similarity between the token from Decoder and the Encoder are calculated using the dot product just like before then the similarities are ran through a SoftMax function which tells us which word should be used as the next word. 
 
