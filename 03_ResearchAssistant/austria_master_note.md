@@ -35,3 +35,10 @@
 5. Two reference letters from teachers on official letterhead and with signature
 6. Copy of passport
 7. If you are already registered at TU Graz: confirmation of study period
+
+## Universities list
+1. tu graz
+2. jku
+3. . University of Klagenfurt
+4. University of Innsbruck
+5. 

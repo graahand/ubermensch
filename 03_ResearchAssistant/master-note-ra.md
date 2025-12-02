@@ -5,7 +5,7 @@
 3. [nato lambert](https://natolambert.com/guides/grad-apps), he is not associated with any universities,  but with allen ai research institute, and the link provided is to his instructions for anyone applying for research, writing email to professors, reaching out to them. 
 	1. one of his most important message is to reach out the previous phd students and post docs who can tell you how the prospective life with the professor  you are trying to reach out. 
 4. [How to and How not to write prospective student email to potential advisors](https://decomposition.al/blog/2020/11/25/how-not-to-email-prospective-grad-school-advisors/) examples and comparisions are included in this blog which is very practical for my use case as well. 
-5. reach out to her as well she accepting fully funded PhD students in autonomous driving and AI security, [Ce Zhou,Missouri University of Science and Technology](https://sites.google.com/view/cezhou/), yo ni her [https://futurestudents.mst.edu/admissions/graduate/]
+5. reach out to her as well she accepting fully funded PhD students in autonomous driving and AI security, [Ce Zhou,Missouri University of Science and Technology](https://sites.google.com/view/cezhou/), yo ni her [htbn tps://futurestudents.mst.edu/admissions/graduate/]
 
 6. [gabriel illharco, म्eta superintelligence ल्ab](https://gabrielilharco.com/)
 
