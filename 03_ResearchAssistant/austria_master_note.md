@@ -1,4 +1,4 @@
-
+#ra 
 1. two types of uni, public universities and universities in applied science, FH. 
 2. Universities like TU Wien (Vienna uni of tech), TU Graz (graz uni of tech) and JKU, uni of klagenfurt, university of innsbruck are some FH uni which teach the programs in english. 
 3. 6.5 english proficiency test score. 

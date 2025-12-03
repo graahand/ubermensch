@@ -1,0 +1,2 @@
+
+1. A obsidian community plugin which is based on PaddleOCRv5 that allow extracting the information from the image that are attached into the readme file. The user experience is of utmost important here and the extraction should be performed via a right click into the image and then choosing the extraction option which then extract and place the extraction information just below the image. 

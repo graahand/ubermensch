@@ -1,3 +1,4 @@
+#ra 
 https://www.ieltsanswers.com/cambridge-ielts-17-writing-test-essay-task-2.html
 
 ### It is important for people to take risks, both in their professional lives and their personal lives. Do you think the advantages of taking risks outweight the disadvantages. 

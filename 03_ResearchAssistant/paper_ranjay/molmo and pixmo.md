@@ -1,3 +1,5 @@
+#ra 
+
 [[openweights vlm (molmo and pixmo).pdf]]
 
 1. so ranjay krishna ko lab le chai ekdam transparent vision language model banayeko xah not only model but the datasets as well. ani yo models haru ko unique and most important feature vanekai yesko dataset ho. khasma chai dataset banaune belama llm or vlm ko lagi k garinxa vanda OpenAI ko api or aru kunai Claude, Gemini jasto models haru batw dataset prepare garinxa bulk ma ani tyo synthetic dataset ma chai model lai train garinxa jasle garda k samasya aayo vanda, tyo dataset batw train gareko model open source vaye pani just tyo model tyo proprietary model ko distilled version matra hunxa tyo vanda badi kei pani garna sakdaina, especially vision language model ko case ma. 

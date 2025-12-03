@@ -1,3 +1,4 @@
+#ra 
 1. a lab working on vision language model from university of michigan. their most famous and influential paper is about grounding the llm or vlm. (connecting language units to their referents in the phyical world is grounding)  
 
 2. grounding open vocabulary acquisition (GOVA) is a process josma next word predict garne vanda ni words haru ko real world meaning lai visual information ko through associate garxa. like manxe le physical interaction batw language sikne garxa.

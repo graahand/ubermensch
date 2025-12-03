@@ -1,3 +1,5 @@
+#ra 
+
 Dear professor x/y, 
 
 I hope this email find you well. I am writing this email regarding my interest in pursuing Masters research under your supervision in the sector of generative AI and multimodal learning. 

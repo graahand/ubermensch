@@ -1,4 +1,4 @@
-
+#ra 
 
 1. [princeton vision and learning lab, jia deng](https://pvl.cs.princeton.edu/), yesle masters student pani linxa jasto xah yeslai ni mail garnu parxa. 
 2. [marcus rohrbach](https://rohrbach.vision/contact/), he is also accepting students in computational linguistics, machine learning and grounding. 
